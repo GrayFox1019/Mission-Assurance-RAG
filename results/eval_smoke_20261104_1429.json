@@ -1,0 +1,106 @@
+{
+ "meta": {
+  "label": "smoke",
+  "k": 6,
+  "id_boost": true,
+  "model": "claude-sonnet-5-5",
+  "chunk_tokens": "800",
+  "backend": "chroma",
+  "timestamp": "20261104_1429",
+  "cited_correct": "2/2",
+  "grounded": "2/2",
+  "refusal_correct": "1/1"
+ },
+ "rows": [
+  {
+   "id": 2,
+   "type": "factual",
+   "question": "Under DoDI 8510.01, who is responsible for authorizing a DoD system to operate?",
+   "expected_sources": [
+    "DoDI 8510.01"
+   ],
+   "must_contain": [
+    "Authorizing Official"
+   ],
+   "should_refuse": false,
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "answer": "The authorizing official (AO) is responsible for authorizing a DoD system to operate.\n\n- DoD systems \"must receive and maintain a valid authorization before beginning operations.\" [DoDI 8510.01, pp. 11-13 (doctrine)]\n- NIST SP 800-37 r2 defines an AO as a senior Federal official or executive \"with the authority to authorize (i.e., assume responsibility for) the operation of an information system\" at an acceptable level of risk. [NIST SP 800-37 r2, pp. 111-112 (doctrine)]\n- The DoD CISO establishes the AO construct and ensures acquisition programs and DoD systems have AOs appointed. [DoDI 8510.01, pp. 6-8 (doctrine)]\n- AOs, with PM or system owner assistance, oversee cybersecurity activities, findings, and remediation. They ensure that data from those activities is captured in security authorization packages \"to inform risk-based authorization decisions.\" [DoDI 8510.01, pp. 6-8 (doctrine)]\n- The DoD Component head appoints the AO. For MA-managed information systems, the PAO appoints the AO. [DoD",
+   "cited": [
+    "[DoDI 8510.01, pp. 6-8 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 111-112 (doctrine)]",
+    "[DoDI 8510.01, pp. 11-13 (doctrine)]"
+   ],
+   "retrieved": [
+    "[DoDI 8510.01, pp. 6-8 (doctrine)]",
+    "[DoDI 8510.01, pp. 32-35 (doctrine)]",
+    "[DoDI 8510.01, pp. 29-32 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 111-112 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 142-143 (doctrine)]",
+    "[DoDI 8510.01, pp. 11-13 (doctrine)]"
+   ]
+  },
+  {
+   "id": 13,
+   "type": "cross_document_structured",
+   "question": "For risk register entry R-05 in the F/A-13 assessment, which hazardous control action does it reference, and which Unacceptable Loss does that HCA trace to?",
+   "expected_sources": [
+    "F/A-13 Risk Assessment — Risk Register",
+    "F/A-13 Peacemaker FMA-C Report §5.2",
+    "F/A-13 Peacemaker FMA-C Report §3.2"
+   ],
+   "must_contain": [
+    "CA19",
+    "H4",
+    "UL-3"
+   ],
+   "should_refuse": false,
+   "notes": "Three-hop: Register row (FMA-C HCA Reference) -> §5.2 HCA table (CA19 -> H4) -> §3.2 crosswalk (H4 -> UL-3). Partial credit: CA19 + UL-3 without H4.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "answer": "R-05 references three HCAs, not one:\n- CA19 GCS_MAM_Any (IssueOverride)_CA19, \"Applied when unsafe\"\n- CA19, \"Not applied when needed\"\n- CA8 MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8, \"Applied when unsafe\"\n\nAll three enable hazard H4. [F/A-13 Risk Assessment — Risk Register row R-05 (worked_example)]\n\nThe row's Primary UL is UL-1, UL-3, UL-5. [F/A-13 Risk Assessment — Risk Register row R-05 (worked_example)] The Section 5.4 table gives the same Primary UL for R-05. [F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]\n\nScenario 5 covers the same HCAs and H4, and lists the losses at stake as UL-1, UL-3, UL-4, UL-5. UL-4 therefore appears there but not in R-05's Primary UL. [F/A-13 Peacemaker FMA-C Report Scenario 5 (worked_example)]\n\nNot found in corpus: a mapping of each individual HCA to a single UL. The passages tie the losses to the risk entry and scenario as a whole, not to CA19 or CA8 separately.",
+   "cited": [
+    "[F/A-13 Risk Assessment — Risk Register row R-05 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report Scenario 5 (worked_example)]"
+   ],
+   "retrieved": [
+    "[F/A-13 Risk Assessment — Risk Register row R-05 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report Scenario 5 (worked_example)]",
+    "[FMAC Tables for F/A-13 — Step 2 & 3 row H1 (worked_example)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[NIST SP 800-30 r1, pp. 33-34 (doctrine)]"
+   ]
+  },
+  {
+   "id": 18,
+   "type": "negative",
+   "question": "What does NIST SP 800-53 control SC-99 require?",
+   "expected_sources": [],
+   "must_contain": [
+    "Not found in corpus"
+   ],
+   "should_refuse": true,
+   "notes": "Real family, nonexistent control. Direct test of rule 3.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": true,
+   "refused": true,
+   "answer": "Not found in corpus. The passages cover other 800-53 controls (e.g., AU-4 audit storage capacity and AC-1 policy and procedures), but nothing on SC-99.",
+   "cited": [],
+   "retrieved": [
+    "[NIST SP 800-82 r3, pp. 240-242 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 314-316 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 35-37 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 241-243 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 33-36 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 43-45 (doctrine)]"
+   ]
+  }
+ ]
+}

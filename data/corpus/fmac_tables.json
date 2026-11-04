@@ -1,0 +1,1291 @@
+[
+ {
+  "sheet": "Step 1",
+  "row": "AST",
+  "fields": {
+   "Component": "AST",
+   "PROMPT (where to find it)": "SOURCE: F/A-13 Exercise Brief 'Mission Purpose' section. AST = Aggregate System Task. Answers 'What does the system do?' - use a strong action verb + object. One short phrase.",
+   "YOUR ANSWER (F/A-13)": "maintain air dominance through crewed or uncrewed technologies"
+  },
+  "text": "Sheet: Step 1 | Component: AST | PROMPT (where to find it): SOURCE: F/A-13 Exercise Brief 'Mission Purpose' section. AST = Aggregate System Task. Answers 'What does the system do?' - use a strong action verb + object. One short phrase. | YOUR ANSWER (F/A-13): maintain air dominance through crewed or uncrewed technologies"
+ },
+ {
+  "sheet": "Step 1",
+  "row": "BMO",
+  "fields": {
+   "Component": "BMO",
+   "PROMPT (where to find it)": "SOURCE: F/A-13 Exercise Brief 'Mission Purpose'. BMO = Basic Mission Objective. Answers 'How does it accomplish the AST?' - list the primary means/methods, verb-driven.",
+   "YOUR ANSWER (F/A-13)": "generating aircraft to perform sensing and strike hostile threats"
+  },
+  "text": "Sheet: Step 1 | Component: BMO | PROMPT (where to find it): SOURCE: F/A-13 Exercise Brief 'Mission Purpose'. BMO = Basic Mission Objective. Answers 'How does it accomplish the AST?' - list the primary means/methods, verb-driven. | YOUR ANSWER (F/A-13): generating aircraft to perform sensing and strike hostile threats"
+ },
+ {
+  "sheet": "Step 1",
+  "row": "IOTCT",
+  "fields": {
+   "Component": "IOTCT",
+   "PROMPT (where to find it)": "SOURCE: F/A-13 Exercise Brief 'Mission Purpose'. IOTCT = 'In Order To ... Contribute To ...' Answers 'Why do we need it?' - the strategic/operational outcome the AST enables.",
+   "YOUR ANSWER (F/A-13)": "ensuring joint force freedom of maneuver"
+  },
+  "text": "Sheet: Step 1 | Component: IOTCT | PROMPT (where to find it): SOURCE: F/A-13 Exercise Brief 'Mission Purpose'. IOTCT = 'In Order To ... Contribute To ...' Answers 'Why do we need it?' - the strategic/operational outcome the AST enables. | YOUR ANSWER (F/A-13): ensuring joint force freedom of maneuver"
+ },
+ {
+  "sheet": "Step 1",
+  "row": "Full Squadron Mission (Commander-Provided, Verbatim)",
+  "fields": {
+   "Component": "Full Squadron Mission (Commander-Provided, Verbatim)",
+   "PROMPT (where to find it)": "The 91st Fighter Squadron employs the F/A-13 as a system to maintain air dominance through crewed or uncrewed technologies by means of generating aircraft to perform sensing and strike hostile threats, in order to contribute to ensuring joint force freedom of maneuver."
+  },
+  "text": "Sheet: Step 1 | Component: Full Squadron Mission (Commander-Provided, Verbatim) | PROMPT (where to find it): The 91st Fighter Squadron employs the F/A-13 as a system to maintain air dominance through crewed or uncrewed technologies by means of generating aircraft to perform sensing and strike hostile threats, in order to contribute to ensuring joint force freedom of maneuver."
+ },
+ {
+  "sheet": "Step 1",
+  "row": "TIP",
+  "fields": {
+   "Component": "TIP",
+   "PROMPT (where to find it)": "For BMOs, remember the verbs (a word that expresses an action, state of being, or occurrence). Keep each BMO clause tight; you can chain multiple verbs with commas."
+  },
+  "text": "Sheet: Step 1 | Component: TIP | PROMPT (where to find it): For BMOs, remember the verbs (a word that expresses an action, state of being, or occurrence). Keep each BMO clause tight; you can chain multiple verbs with commas."
+ },
+ {
+  "sheet": "Step 1",
+  "row": "Key Task",
+  "fields": {
+   "Component": "Key Task",
+   "PROMPT (where to find it)": "Commander Definition"
+  },
+  "text": "Sheet: Step 1 | Component: Key Task | PROMPT (where to find it): Commander Definition"
+ },
+ {
+  "sheet": "Step 1",
+  "row": "Generating",
+  "fields": {
+   "Component": "Generating",
+   "PROMPT (where to find it)": "Generating aircraft to fly missions."
+  },
+  "text": "Sheet: Step 1 | Component: Generating | PROMPT (where to find it): Generating aircraft to fly missions."
+ },
+ {
+  "sheet": "Step 1",
+  "row": "Sensing",
+  "fields": {
+   "Component": "Sensing",
+   "PROMPT (where to find it)": "Aggregate sensor information from the main aircraft, loyal wingman aircraft, autonomous aircraft, or deployed drones into a single Operational Picture for decision making."
+  },
+  "text": "Sheet: Step 1 | Component: Sensing | PROMPT (where to find it): Aggregate sensor information from the main aircraft, loyal wingman aircraft, autonomous aircraft, or deployed drones into a single Operational Picture for decision making."
+ },
+ {
+  "sheet": "Step 1",
+  "row": "Striking (Kinetic)",
+  "fields": {
+   "Component": "Striking (Kinetic)",
+   "PROMPT (where to find it)": "Strike using onboard or UAV-mounted kinetic munitions."
+  },
+  "text": "Sheet: Step 1 | Component: Striking (Kinetic) | PROMPT (where to find it): Strike using onboard or UAV-mounted kinetic munitions."
+ },
+ {
+  "sheet": "Step 1",
+  "row": "Striking (Electronic Effects)",
+  "fields": {
+   "Component": "Striking (Electronic Effects)",
+   "PROMPT (where to find it)": "Disrupt the electromagnetic spectrum using onboard or UAV-mounted EW systems."
+  },
+  "text": "Sheet: Step 1 | Component: Striking (Electronic Effects) | PROMPT (where to find it): Disrupt the electromagnetic spectrum using onboard or UAV-mounted EW systems."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "UL-1",
+  "fields": {
+   "Table": "Unacceptable Loss",
+   "ID": "UL-1",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify.",
+   "Definition": "Loss of Life (squadron member, civilian non-combatant)."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Unacceptable Loss | ID: UL-1 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. | Definition: Loss of Life (squadron member, civilian non-combatant)."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "H1",
+  "fields": {
+   "Table": "Hazard",
+   "ID": "H1",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. No asterisk = WILL cause the loss; asterisk (*) = COULD cause the loss.",
+   "Definition": "'Inappropriate Maneuver' - Aircraft or UAV maneuvers outside the safe or intended envelope."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Hazard | ID: H1 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. No asterisk = WILL cause the loss; asterisk (*) = COULD cause the loss. | Definition: 'Inappropriate Maneuver' - Aircraft or UAV maneuvers outside the safe or intended envelope."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "UL-2",
+  "fields": {
+   "Table": "Unacceptable Loss",
+   "ID": "UL-2",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify.",
+   "Definition": "Loss of an Aircraft (missing, destroyed, or damaged approaching a NO-GO state)."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Unacceptable Loss | ID: UL-2 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. | Definition: Loss of an Aircraft (missing, destroyed, or damaged approaching a NO-GO state)."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "H2",
+  "fields": {
+   "Table": "Hazard",
+   "ID": "H2",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. No asterisk = WILL cause the loss; asterisk (*) = COULD cause the loss.",
+   "Definition": "'Incorrect Weapons Utilization' - Weapon is armed, selected, programmed, or released against an invalid, misidentified, unauthorized, or mistimed target."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Hazard | ID: H2 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. No asterisk = WILL cause the loss; asterisk (*) = COULD cause the loss. | Definition: 'Incorrect Weapons Utilization' - Weapon is armed, selected, programmed, or released against an invalid, misidentified, unauthorized, or mistimed target."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "UL-3",
+  "fields": {
+   "Table": "Unacceptable Loss",
+   "ID": "UL-3",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify.",
+   "Definition": "Loss of MAM control of an aircraft or UAV swarm (free-flight of F/A-13 or UAV swarm)."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Unacceptable Loss | ID: UL-3 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. | Definition: Loss of MAM control of an aircraft or UAV swarm (free-flight of F/A-13 or UAV swarm)."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "H3",
+  "fields": {
+   "Table": "Hazard",
+   "ID": "H3",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. No asterisk = WILL cause the loss; asterisk (*) = COULD cause the loss.",
+   "Definition": "'MPS Compromise' - Aircraft or swarm acts on compromised or faulty battlespace data (MPS = Mission Planning System / Mission Processing System)."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Hazard | ID: H3 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. No asterisk = WILL cause the loss; asterisk (*) = COULD cause the loss. | Definition: 'MPS Compromise' - Aircraft or swarm acts on compromised or faulty battlespace data (MPS = Mission Planning System / Mission Processing System)."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "UL-4",
+  "fields": {
+   "Table": "Unacceptable Loss",
+   "ID": "UL-4",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify.",
+   "Definition": "Loss of the ability to generate a sortie (unable to man crew or equip an aircraft to fly a mission, including autonomous missions)."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Unacceptable Loss | ID: UL-4 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. | Definition: Loss of the ability to generate a sortie (unable to man crew or equip an aircraft to fly a mission, including autonomous missions)."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "H4",
+  "fields": {
+   "Table": "Hazard",
+   "ID": "H4",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. No asterisk = WILL cause the loss; asterisk (*) = COULD cause the loss.",
+   "Definition": "'Autonomy Constraint Violation' - Autonomous behavior occurs outside authorized mission, ROE, or supervisory constraints."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Hazard | ID: H4 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. No asterisk = WILL cause the loss; asterisk (*) = COULD cause the loss. | Definition: 'Autonomy Constraint Violation' - Autonomous behavior occurs outside authorized mission, ROE, or supervisory constraints."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "crosswalk H1",
+  "fields": {
+   "Table": "Hazard / Loss Crosswalk",
+   "Hazard": "H1",
+   "UL-1": "W",
+   "UL-2": "W",
+   "UL-3": "W*",
+   "UL-4": "W*",
+   "UL-5": "W*"
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Hazard / Loss Crosswalk | Hazard: H1 | UL-1: W | UL-2: W | UL-3: W* | UL-4: W* | UL-5: W*"
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "UL-5",
+  "fields": {
+   "Table": "Unacceptable Loss",
+   "ID": "UL-5",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify.",
+   "Definition": "Unintended damage to civilian infrastructure (imprecise fire damaging non-combatant infrastructure)."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Unacceptable Loss | ID: UL-5 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. | Definition: Unintended damage to civilian infrastructure (imprecise fire damaging non-combatant infrastructure)."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "H5",
+  "fields": {
+   "Table": "Hazard",
+   "ID": "H5",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. No asterisk = WILL cause the loss; asterisk (*) = COULD cause the loss.",
+   "Definition": "'Invalid or Degraded System State' - Aircraft or subsystem in an incorrect, unverified, or degraded state such that: required capability is unavailable when needed, OR system configuration (including stores state) is incorrect, OR maintenance/update actions introduce unsafe or unvalidated conditions."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Hazard | ID: H5 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. No asterisk = WILL cause the loss; asterisk (*) = COULD cause the loss. | Definition: 'Invalid or Degraded System State' - Aircraft or subsystem in an incorrect, unverified, or degraded state such that: required capability is unavailable when needed, OR system configuration (including stores state) is incorrect, OR maintenance/update actions introduce unsafe or unvalidated conditions."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "crosswalk H2",
+  "fields": {
+   "Table": "Hazard / Loss Crosswalk",
+   "Hazard": "H2",
+   "UL-1": "W",
+   "UL-2": "W*",
+   "UL-3": "N",
+   "UL-4": "W*",
+   "UL-5": "W"
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Hazard / Loss Crosswalk | Hazard: H2 | UL-1: W | UL-2: W* | UL-3: N | UL-4: W* | UL-5: W"
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "crosswalk H3",
+  "fields": {
+   "Table": "Hazard / Loss Crosswalk",
+   "Hazard": "H3",
+   "UL-1": "W*",
+   "UL-2": "W*",
+   "UL-3": "W",
+   "UL-4": "W",
+   "UL-5": "W"
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Hazard / Loss Crosswalk | Hazard: H3 | UL-1: W* | UL-2: W* | UL-3: W | UL-4: W | UL-5: W"
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "crosswalk H4",
+  "fields": {
+   "Table": "Hazard / Loss Crosswalk",
+   "Hazard": "H4",
+   "UL-1": "W",
+   "UL-2": "W",
+   "UL-3": "W",
+   "UL-4": "W*",
+   "UL-5": "W"
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Hazard / Loss Crosswalk | Hazard: H4 | UL-1: W | UL-2: W | UL-3: W | UL-4: W* | UL-5: W"
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "crosswalk H5",
+  "fields": {
+   "Table": "Hazard / Loss Crosswalk",
+   "Hazard": "H5",
+   "UL-1": "W",
+   "UL-2": "W",
+   "UL-3": "W",
+   "UL-4": "W",
+   "UL-5": "W*"
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Hazard / Loss Crosswalk | Hazard: H5 | UL-1: W | UL-2: W | UL-3: W | UL-4: W | UL-5: W*"
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "C-1",
+  "fields": {
+   "Table": "Constraint",
+   "ID": "C-1",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify.",
+   "Definition": "Aircraft and UAVs shall remain within the safe and intended flight envelope at all times."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Constraint | ID: C-1 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. | Definition: Aircraft and UAVs shall remain within the safe and intended flight envelope at all times."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "C-2",
+  "fields": {
+   "Table": "Constraint",
+   "ID": "C-2",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify.",
+   "Definition": "Weapons shall only be armed, selected, programmed, and released when target validity, authorization, and timing constraints are satisfied."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Constraint | ID: C-2 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. | Definition: Weapons shall only be armed, selected, programmed, and released when target validity, authorization, and timing constraints are satisfied."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "C-3",
+  "fields": {
+   "Table": "Constraint",
+   "ID": "C-3",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify.",
+   "Definition": "Aircraft and swarm operations shall only act on validated, current, and sufficiently reliable battlespace and mission data."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Constraint | ID: C-3 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. | Definition: Aircraft and swarm operations shall only act on validated, current, and sufficiently reliable battlespace and mission data."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "C-4",
+  "fields": {
+   "Table": "Constraint",
+   "ID": "C-4",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify.",
+   "Definition": "Autonomous behavior shall remain within authorized mission, rules of engagement (ROE), and supervisory constraints at all times."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Constraint | ID: C-4 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. | Definition: Autonomous behavior shall remain within authorized mission, rules of engagement (ROE), and supervisory constraints at all times."
+ },
+ {
+  "sheet": "Step 2 & 3",
+  "row": "C-5",
+  "fields": {
+   "Table": "Constraint",
+   "ID": "C-5",
+   "Source": "SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify.",
+   "Definition": "The aircraft and all subsystems shall operate only in verified, valid, and mission-capable configurations."
+  },
+  "text": "Sheet: Step 2 & 3 | Table: Constraint | ID: C-5 | Source: SOURCE: 91 FS Commander's Guidance (21 Jul briefing). Commander-provided; do not modify. | Definition: The aircraft and all subsystems shall operate only in verified, valid, and mission-capable configurations."
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "PIC",
+  "fields": {
+   "Element": "PIC",
+   "Ground Ops": "Preflight per MEL, sign AFTO 781A, mode selection (Crewed/Loyal Wingman/Autonomous)",
+   "Mission Planning": "Aircrew brief, accept MDL, verify autonomy constraints",
+   "Ingress": "Fly per MDL, monitor MAM authority, monitor sensor picture",
+   "Engage (Sensing + Striking)": "Authorize weapon release (crewed mode); supervise MAM (autonomy)",
+   "Egress / Recovery / Debrief": "RTB, sign AFTO 781A, debrief"
+  },
+  "text": "Sheet: Step  4.2 | Element: PIC | Ground Ops: Preflight per MEL, sign AFTO 781A, mode selection (Crewed/Loyal Wingman/Autonomous) | Mission Planning: Aircrew brief, accept MDL, verify autonomy constraints | Ingress: Fly per MDL, monitor MAM authority, monitor sensor picture | Engage (Sensing + Striking): Authorize weapon release (crewed mode); supervise MAM (autonomy) | Egress / Recovery / Debrief: RTB, sign AFTO 781A, debrief"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "GCS Operator",
+  "fields": {
+   "Element": "GCS Operator",
+   "Ground Ops": "GCS BIT, comms check, credential auth",
+   "Mission Planning": "Accept MDL push from MPS over secure net; verify autonomy plan",
+   "Ingress": "Monitor F/A-13 telemetry via ATDL/SATCOM",
+   "Engage (Sensing + Striking)": "Primary human authority in Autonomous mode; monitor MAM decisions; abort/override if needed",
+   "Egress / Recovery / Debrief": "Command UAV recovery; receive debrief stream"
+  },
+  "text": "Sheet: Step  4.2 | Element: GCS Operator | Ground Ops: GCS BIT, comms check, credential auth | Mission Planning: Accept MDL push from MPS over secure net; verify autonomy plan | Ingress: Monitor F/A-13 telemetry via ATDL/SATCOM | Engage (Sensing + Striking): Primary human authority in Autonomous mode; monitor MAM decisions; abort/override if needed | Egress / Recovery / Debrief: Command UAV recovery; receive debrief stream"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Maintenance",
+  "fields": {
+   "Element": "Maintenance",
+   "Ground Ops": "Perform 781A discrepancies, run PMA diagnostics, load firmware via PMA/MSMT/WIT",
+   "Mission Planning": "Load DTC into DTU (SDLP alt); verify tool integrity + chain of custody",
+   "Ingress": "Ground role only",
+   "Engage (Sensing + Striking)": "Ground role only",
+   "Egress / Recovery / Debrief": "Post-flight inspection; extract debrief via SDLP → DES; download logs"
+  },
+  "text": "Sheet: Step  4.2 | Element: Maintenance | Ground Ops: Perform 781A discrepancies, run PMA diagnostics, load firmware via PMA/MSMT/WIT | Mission Planning: Load DTC into DTU (SDLP alt); verify tool integrity + chain of custody | Ingress: Ground role only | Engage (Sensing + Striking): Ground role only | Egress / Recovery / Debrief: Post-flight inspection; extract debrief via SDLP → DES; download logs"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "MPS Operator",
+  "fields": {
+   "Element": "MPS Operator",
+   "Ground Ops": "n/a",
+   "Mission Planning": "Build MDL in classified enclave; write Type-1 encrypted DTC; push MDL to GCS over secure net (autonomous)",
+   "Ingress": "n/a",
+   "Engage (Sensing + Striking)": "n/a",
+   "Egress / Recovery / Debrief": "Ingest debrief for planning next mission"
+  },
+  "text": "Sheet: Step  4.2 | Element: MPS Operator | Ground Ops: n/a | Mission Planning: Build MDL in classified enclave; write Type-1 encrypted DTC; push MDL to GCS over secure net (autonomous) | Ingress: n/a | Engage (Sensing + Striking): n/a | Egress / Recovery / Debrief: Ingest debrief for planning next mission"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "CROWS",
+  "fields": {
+   "Element": "CROWS",
+   "Ground Ops": "Validate all tool/firmware updates before distribution",
+   "Mission Planning": "Validate MDL software baseline",
+   "Ingress": "n/a",
+   "Engage (Sensing + Striking)": "n/a",
+   "Egress / Recovery / Debrief": "Post-incident forensics if compromise suspected"
+  },
+  "text": "Sheet: Step  4.2 | Element: CROWS | Ground Ops: Validate all tool/firmware updates before distribution | Mission Planning: Validate MDL software baseline | Ingress: n/a | Engage (Sensing + Striking): n/a | Egress / Recovery / Debrief: Post-incident forensics if compromise suspected"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Vendor Techs (RMT/EST/EFT)",
+  "fields": {
+   "Element": "Vendor Techs (RMT/EST/EFT)",
+   "Ground Ops": "Push firmware via RMT/EST/EFT direct-connect ports (bypasses Security Gateway)",
+   "Mission Planning": "n/a",
+   "Ingress": "n/a",
+   "Engage (Sensing + Striking)": "n/a",
+   "Egress / Recovery / Debrief": "Diagnostic data pull"
+  },
+  "text": "Sheet: Step  4.2 | Element: Vendor Techs (RMT/EST/EFT) | Ground Ops: Push firmware via RMT/EST/EFT direct-connect ports (bypasses Security Gateway) | Mission Planning: n/a | Ingress: n/a | Engage (Sensing + Striking): n/a | Egress / Recovery / Debrief: Diagnostic data pull"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "MACCE",
+  "fields": {
+   "Element": "MACCE",
+   "Ground Ops": "Verify chain of custody on all media; verify CROWS attestation",
+   "Mission Planning": "Verify MDL DTC integrity + Type-1 crypto key rotation",
+   "Ingress": "Monitor for anomaly indicators",
+   "Engage (Sensing + Striking)": "Monitor for anomaly indicators",
+   "Egress / Recovery / Debrief": "Post-mission anomaly analysis; forensics"
+  },
+  "text": "Sheet: Step  4.2 | Element: MACCE | Ground Ops: Verify chain of custody on all media; verify CROWS attestation | Mission Planning: Verify MDL DTC integrity + Type-1 crypto key rotation | Ingress: Monitor for anomaly indicators | Engage (Sensing + Striking): Monitor for anomaly indicators | Egress / Recovery / Debrief: Post-mission anomaly analysis; forensics"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "COMSEC Custodian",
+  "fields": {
+   "Element": "COMSEC Custodian",
+   "Ground Ops": "Key Type-1 DTC crypto, ATDL keys, Link-16 crypto, UAV mesh keys",
+   "Mission Planning": "Zeroize/reload keys per rotation cycle",
+   "Ingress": "n/a",
+   "Engage (Sensing + Striking)": "n/a",
+   "Egress / Recovery / Debrief": "Key rotation and destruction records"
+  },
+  "text": "Sheet: Step  4.2 | Element: COMSEC Custodian | Ground Ops: Key Type-1 DTC crypto, ATDL keys, Link-16 crypto, UAV mesh keys | Mission Planning: Zeroize/reload keys per rotation cycle | Ingress: n/a | Engage (Sensing + Striking): n/a | Egress / Recovery / Debrief: Key rotation and destruction records"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Mission Computer (MC)",
+  "fields": {
+   "Element": "Mission Computer (MC)",
+   "Ground Ops": "Boot BIT",
+   "Mission Planning": "Accept MDL via DTU/SDLP → Security Gateway; distribute to MAM/SFE/SMS/Datalink",
+   "Ingress": "Provide bus arbitration; sensor picture; waypoint navigation",
+   "Engage (Sensing + Striking)": "Kill chain management; stores release logic; UAV command distribution",
+   "Egress / Recovery / Debrief": "Log to recorder; prep debrief"
+  },
+  "text": "Sheet: Step  4.2 | Element: Mission Computer (MC) | Ground Ops: Boot BIT | Mission Planning: Accept MDL via DTU/SDLP → Security Gateway; distribute to MAM/SFE/SMS/Datalink | Ingress: Provide bus arbitration; sensor picture; waypoint navigation | Engage (Sensing + Striking): Kill chain management; stores release logic; UAV command distribution | Egress / Recovery / Debrief: Log to recorder; prep debrief"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Mission Autonomy Module (MAM)",
+  "fields": {
+   "Element": "Mission Autonomy Module (MAM)",
+   "Ground Ops": "Standby",
+   "Mission Planning": "Load AI models, ROE, abort criteria from MDL",
+   "Ingress": "Initialize per MDL constraints; begin autonomy supervisory",
+   "Engage (Sensing + Striking)": "Autonomous mode: authorize engagement within ROE; Loyal Wingman: coordinate",
+   "Egress / Recovery / Debrief": "Command UAV recovery/zeroize"
+  },
+  "text": "Sheet: Step  4.2 | Element: Mission Autonomy Module (MAM) | Ground Ops: Standby | Mission Planning: Load AI models, ROE, abort criteria from MDL | Ingress: Initialize per MDL constraints; begin autonomy supervisory | Engage (Sensing + Striking): Autonomous mode: authorize engagement within ROE; Loyal Wingman: coordinate | Egress / Recovery / Debrief: Command UAV recovery/zeroize"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Security Gateway (2 installed)",
+  "fields": {
+   "Element": "Security Gateway (2 installed)",
+   "Ground Ops": "Standby / BIT",
+   "Mission Planning": "Mediate ALL MDL ingress; validate provenance",
+   "Ingress": "Continuous port validation; transaction re-authentication",
+   "Engage (Sensing + Striking)": "Continuous port validation",
+   "Egress / Recovery / Debrief": "Sanitize / export debrief data through same gateway"
+  },
+  "text": "Sheet: Step  4.2 | Element: Security Gateway (2 installed) | Ground Ops: Standby / BIT | Mission Planning: Mediate ALL MDL ingress; validate provenance | Ingress: Continuous port validation; transaction re-authentication | Engage (Sensing + Striking): Continuous port validation | Egress / Recovery / Debrief: Sanitize / export debrief data through same gateway"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Sensor Fusion Engine (SFE)",
+  "fields": {
+   "Element": "Sensor Fusion Engine (SFE)",
+   "Ground Ops": "Standby / BIT",
+   "Mission Planning": "Load threat library from MDL",
+   "Ingress": "Provide fused radar + EO/IR + EW picture to MC/MAM",
+   "Engage (Sensing + Striking)": "Continuous fused picture; update per new sensor input",
+   "Egress / Recovery / Debrief": "Log fusion data to recorder"
+  },
+  "text": "Sheet: Step  4.2 | Element: Sensor Fusion Engine (SFE) | Ground Ops: Standby / BIT | Mission Planning: Load threat library from MDL | Ingress: Provide fused radar + EO/IR + EW picture to MC/MAM | Engage (Sensing + Striking): Continuous fused picture; update per new sensor input | Egress / Recovery / Debrief: Log fusion data to recorder"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Stores Management System (SMS)",
+  "fields": {
+   "Element": "Stores Management System (SMS)",
+   "Ground Ops": "Standby / BIT",
+   "Mission Planning": "Load weapon profiles via MC",
+   "Ingress": "Track stores / fuel state",
+   "Engage (Sensing + Striking)": "Execute release commands; countermeasures dispense",
+   "Egress / Recovery / Debrief": "Standby"
+  },
+  "text": "Sheet: Step  4.2 | Element: Stores Management System (SMS) | Ground Ops: Standby / BIT | Mission Planning: Load weapon profiles via MC | Ingress: Track stores / fuel state | Engage (Sensing + Striking): Execute release commands; countermeasures dispense | Egress / Recovery / Debrief: Standby"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Weapon Interface Unit (WIU)",
+  "fields": {
+   "Element": "Weapon Interface Unit (WIU)",
+   "Ground Ops": "Standby",
+   "Mission Planning": "Standby",
+   "Ingress": "Translate 1553 ↔ 1760 for stores",
+   "Engage (Sensing + Striking)": "Translate 1553 ↔ 1760 for stores",
+   "Egress / Recovery / Debrief": "Standby"
+  },
+  "text": "Sheet: Step  4.2 | Element: Weapon Interface Unit (WIU) | Ground Ops: Standby | Mission Planning: Standby | Ingress: Translate 1553 ↔ 1760 for stores | Engage (Sensing + Striking): Translate 1553 ↔ 1760 for stores | Egress / Recovery / Debrief: Standby"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Vehicle Mgmt Computer (VMC)",
+  "fields": {
+   "Element": "Vehicle Mgmt Computer (VMC)",
+   "Ground Ops": "Standby / BIT",
+   "Mission Planning": "Standby",
+   "Ingress": "Flight-control coordination",
+   "Engage (Sensing + Striking)": "Flight-control coordination",
+   "Egress / Recovery / Debrief": "Coordination until shutdown"
+  },
+  "text": "Sheet: Step  4.2 | Element: Vehicle Mgmt Computer (VMC) | Ground Ops: Standby / BIT | Mission Planning: Standby | Ingress: Flight-control coordination | Engage (Sensing + Striking): Flight-control coordination | Egress / Recovery / Debrief: Coordination until shutdown"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Flight Control Computer (FCC)",
+  "fields": {
+   "Element": "Flight Control Computer (FCC)",
+   "Ground Ops": "BIT",
+   "Mission Planning": "Standby",
+   "Ingress": "Control-surface commands",
+   "Engage (Sensing + Striking)": "Control-surface commands",
+   "Egress / Recovery / Debrief": "Control-surface commands until shutdown"
+  },
+  "text": "Sheet: Step  4.2 | Element: Flight Control Computer (FCC) | Ground Ops: BIT | Mission Planning: Standby | Ingress: Control-surface commands | Engage (Sensing + Striking): Control-surface commands | Egress / Recovery / Debrief: Control-surface commands until shutdown"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "FADEC",
+  "fields": {
+   "Element": "FADEC",
+   "Ground Ops": "Standby",
+   "Mission Planning": "Accept updates via vendor EFT direct-connect (Ground Ops only)",
+   "Ingress": "Engine control",
+   "Engage (Sensing + Striking)": "Engine control",
+   "Egress / Recovery / Debrief": "Engine control; shutdown"
+  },
+  "text": "Sheet: Step  4.2 | Element: FADEC | Ground Ops: Standby | Mission Planning: Accept updates via vendor EFT direct-connect (Ground Ops only) | Ingress: Engine control | Engage (Sensing + Striking): Engine control | Egress / Recovery / Debrief: Engine control; shutdown"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Health Monitoring System (HMS)",
+  "fields": {
+   "Element": "Health Monitoring System (HMS)",
+   "Ground Ops": "BIT reporting",
+   "Mission Planning": "Standby",
+   "Ingress": "Continuous health telemetry",
+   "Engage (Sensing + Striking)": "Continuous health telemetry",
+   "Egress / Recovery / Debrief": "Fault-log dump via PMA"
+  },
+  "text": "Sheet: Step  4.2 | Element: Health Monitoring System (HMS) | Ground Ops: BIT reporting | Mission Planning: Standby | Ingress: Continuous health telemetry | Engage (Sensing + Striking): Continuous health telemetry | Egress / Recovery / Debrief: Fault-log dump via PMA"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Ground Control Station (GCS)",
+  "fields": {
+   "Element": "Ground Control Station (GCS)",
+   "Ground Ops": "BIT; comms warm",
+   "Mission Planning": "Receive MDL push over secure net",
+   "Ingress": "Monitor F/A-13 telemetry",
+   "Engage (Sensing + Striking)": "Autonomous mode: primary human decision authority",
+   "Egress / Recovery / Debrief": "UAV recovery command; debrief telemetry ingest"
+  },
+  "text": "Sheet: Step  4.2 | Element: Ground Control Station (GCS) | Ground Ops: BIT; comms warm | Mission Planning: Receive MDL push over secure net | Ingress: Monitor F/A-13 telemetry | Engage (Sensing + Striking): Autonomous mode: primary human decision authority | Egress / Recovery / Debrief: UAV recovery command; debrief telemetry ingest"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "CSP + UAV Swarm",
+  "fields": {
+   "Element": "CSP + UAV Swarm",
+   "Ground Ops": "Preflight self-check",
+   "Mission Planning": "Programmed via MC on 1760 / AFDX",
+   "Ingress": "Launch on MC command; establish encrypted RF mesh",
+   "Engage (Sensing + Striking)": "Execute mission per MAM/MC; can be commanded to zeroize",
+   "Egress / Recovery / Debrief": "Recovery per type (expendable / recoverable / persistent); zeroize if capture imminent"
+  },
+  "text": "Sheet: Step  4.2 | Element: CSP + UAV Swarm | Ground Ops: Preflight self-check | Mission Planning: Programmed via MC on 1760 / AFDX | Ingress: Launch on MC command; establish encrypted RF mesh | Engage (Sensing + Striking): Execute mission per MAM/MC; can be commanded to zeroize | Egress / Recovery / Debrief: Recovery per type (expendable / recoverable / persistent); zeroize if capture imminent"
+ },
+ {
+  "sheet": "Step  4.2",
+  "row": "Wingman / Support Aircrew",
+  "fields": {
+   "Element": "Wingman / Support Aircrew",
+   "Ground Ops": "Preflight per MEL for wingman a/c; verify mode selection with lead (Crewed / Loyal Wingman)",
+   "Mission Planning": "Attend brief; verify MDL synchronization with lead; confirm data-link posture",
+   "Ingress": "Fly formation per MDL; back up lead sensor picture; monitor MAM authority on Loyal Wingman a/c",
+   "Engage (Sensing + Striking)": "Provide mutual support; secondary weapon release authority (crewed); cross-check MAM decisions (Loyal Wingman)",
+   "Egress / Recovery / Debrief": "RTB in formation; sign AFTO 781A; contribute to debrief"
+  },
+  "text": "Sheet: Step  4.2 | Element: Wingman / Support Aircrew | Ground Ops: Preflight per MEL for wingman a/c; verify mode selection with lead (Crewed / Loyal Wingman) | Mission Planning: Attend brief; verify MDL synchronization with lead; confirm data-link posture | Ingress: Fly formation per MDL; back up lead sensor picture; monitor MAM authority on Loyal Wingman a/c | Engage (Sensing + Striking): Provide mutual support; secondary weapon release authority (crewed); cross-check MAM decisions (Loyal Wingman) | Egress / Recovery / Debrief: RTB in formation; sign AFTO 781A; contribute to debrief"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA1: Vendor_RMT_GroundOps (UpdateRadar)_CA1",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA1: Vendor_RMT_GroundOps (UpdateRadar)_CA1",
+   "PMD 4.5 (IF/THEN)": "IF RMT cert valid AND vendor firmware CROWS-attested AND Radar Service Port authorized, THEN begin radar firmware update via vendor direct-connect (bypasses Security Gateway).",
+   "PMV 4.6 (nouns)": "RMT cert; CROWS attestation; Radar Service Port state",
+   "PMVV 4.7 (values)": "RMT: authed / unauth | Attest: pass / fail | Port: authorized / unauthorized"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA1: Vendor_RMT_GroundOps (UpdateRadar)_CA1 | PMD 4.5 (IF/THEN): IF RMT cert valid AND vendor firmware CROWS-attested AND Radar Service Port authorized, THEN begin radar firmware update via vendor direct-connect (bypasses Security Gateway). | PMV 4.6 (nouns): RMT cert; CROWS attestation; Radar Service Port state | PMVV 4.7 (values): RMT: authed / unauth | Attest: pass / fail | Port: authorized / unauthorized"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA2: Vendor_EST_GroundOps (UpdateEW)_CA2",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA2: Vendor_EST_GroundOps (UpdateEW)_CA2",
+   "PMD 4.5 (IF/THEN)": "IF EST cert valid AND vendor firmware CROWS-attested AND EW Service Port authorized, THEN begin EW firmware update via vendor direct-connect.",
+   "PMV 4.6 (nouns)": "EST cert; CROWS attestation; EW Service Port state",
+   "PMVV 4.7 (values)": "EST: authed / unauth | Attest: pass / fail | Port: authorized / unauthorized"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA2: Vendor_EST_GroundOps (UpdateEW)_CA2 | PMD 4.5 (IF/THEN): IF EST cert valid AND vendor firmware CROWS-attested AND EW Service Port authorized, THEN begin EW firmware update via vendor direct-connect. | PMV 4.6 (nouns): EST cert; CROWS attestation; EW Service Port state | PMVV 4.7 (values): EST: authed / unauth | Attest: pass / fail | Port: authorized / unauthorized"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA3: Vendor_EFT_GroundOps (UpdateFADEC)_CA3",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA3: Vendor_EFT_GroundOps (UpdateFADEC)_CA3",
+   "PMD 4.5 (IF/THEN)": "IF EFT cert valid AND vendor firmware CROWS-attested AND FADEC port authorized, THEN begin FADEC firmware update via vendor direct-connect.",
+   "PMV 4.6 (nouns)": "EFT cert; CROWS attestation; FADEC port state",
+   "PMVV 4.7 (values)": "EFT: authed / unauth | Attest: pass / fail | Port: authorized / unauthorized"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA3: Vendor_EFT_GroundOps (UpdateFADEC)_CA3 | PMD 4.5 (IF/THEN): IF EFT cert valid AND vendor firmware CROWS-attested AND FADEC port authorized, THEN begin FADEC firmware update via vendor direct-connect. | PMV 4.6 (nouns): EFT cert; CROWS attestation; FADEC port state | PMVV 4.7 (values): EFT: authed / unauth | Attest: pass / fail | Port: authorized / unauthorized"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA4: Maint_PMA_GroundOps (UpdateFirmware)_CA4",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA4: Maint_PMA_GroundOps (UpdateFirmware)_CA4",
+   "PMD 4.5 (IF/THEN)": "IF PMA cert valid AND vendor firmware CROWS-attested AND Maint Ethernet Port authorized AND Security Gateway online, THEN load firmware via PMA.",
+   "PMV 4.6 (nouns)": "PMA cert; CROWS attestation; Maint Ethernet Port; Sec GW state",
+   "PMVV 4.7 (values)": "PMA: authed / unauth | Attest: pass / fail | Port: authorized / unauthorized | GW: online / degraded"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA4: Maint_PMA_GroundOps (UpdateFirmware)_CA4 | PMD 4.5 (IF/THEN): IF PMA cert valid AND vendor firmware CROWS-attested AND Maint Ethernet Port authorized AND Security Gateway online, THEN load firmware via PMA. | PMV 4.6 (nouns): PMA cert; CROWS attestation; Maint Ethernet Port; Sec GW state | PMVV 4.7 (values): PMA: authed / unauth | Attest: pass / fail | Port: authorized / unauthorized | GW: online / degraded"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA5: Maint_MSK_GroundOps (UpdateMAM)_CA5",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA5: Maint_MSK_GroundOps (UpdateMAM)_CA5",
+   "PMD 4.5 (IF/THEN)": "IF MSK bench air-gap verified AND MSK cert valid AND CROWS-attested AND MAM off-aircraft OR limited on-aircraft via Security Gateway, THEN load MAM AI models / ROE.",
+   "PMV 4.6 (nouns)": "MSK cert; CROWS attestation; air-gap verification; Sec GW state",
+   "PMVV 4.7 (values)": "MSK: authed / unauth | Attest: pass / fail | Air-gap: verified / breach | GW: online / degraded"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA5: Maint_MSK_GroundOps (UpdateMAM)_CA5 | PMD 4.5 (IF/THEN): IF MSK bench air-gap verified AND MSK cert valid AND CROWS-attested AND MAM off-aircraft OR limited on-aircraft via Security Gateway, THEN load MAM AI models / ROE. | PMV 4.6 (nouns): MSK cert; CROWS attestation; air-gap verification; Sec GW state | PMVV 4.7 (values): MSK: authed / unauth | Attest: pass / fail | Air-gap: verified / breach | GW: online / degraded"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA6: MPS_DTC_MissionPlan (BuildMDL)_CA6",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA6: MPS_DTC_MissionPlan (BuildMDL)_CA6",
+   "PMD 4.5 (IF/THEN)": "IF MPS classified enclave verified AND Type-1 crypto keys valid AND MDL components validated (threat lib, ROE, weapon profiles), THEN build MDL and write Type-1 encrypted DTC.",
+   "PMV 4.6 (nouns)": "MPS enclave status; Type-1 crypto keys; MDL component validation",
+   "PMVV 4.7 (values)": "Enclave: verified / breach | Keys: valid / expired | MDL: pass / fail"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA6: MPS_DTC_MissionPlan (BuildMDL)_CA6 | PMD 4.5 (IF/THEN): IF MPS classified enclave verified AND Type-1 crypto keys valid AND MDL components validated (threat lib, ROE, weapon profiles), THEN build MDL and write Type-1 encrypted DTC. | PMV 4.6 (nouns): MPS enclave status; Type-1 crypto keys; MDL component validation | PMVV 4.7 (values): Enclave: verified / breach | Keys: valid / expired | MDL: pass / fail"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA7: Maint_DTU_MissionPlan (LoadMDL)_CA7",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA7: Maint_DTU_MissionPlan (LoadMDL)_CA7",
+   "PMD 4.5 (IF/THEN)": "IF DTC chain of custody unbroken AND Type-1 decryption succeeds AND MDL signature valid AND Security Gateway online, THEN load MDL onto aircraft via DTU.",
+   "PMV 4.6 (nouns)": "DTC chain of custody; Type-1 decryption; MDL signature; Sec GW state",
+   "PMVV 4.7 (values)": "CoC: intact / broken | Decrypt: success / fail | Sig: valid / invalid | GW: online / degraded"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA7: Maint_DTU_MissionPlan (LoadMDL)_CA7 | PMD 4.5 (IF/THEN): IF DTC chain of custody unbroken AND Type-1 decryption succeeds AND MDL signature valid AND Security Gateway online, THEN load MDL onto aircraft via DTU. | PMV 4.6 (nouns): DTC chain of custody; Type-1 decryption; MDL signature; Sec GW state | PMVV 4.7 (values): CoC: intact / broken | Decrypt: success / fail | Sig: valid / invalid | GW: online / degraded"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA8: MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA8: MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8",
+   "PMD 4.5 (IF/THEN)": "IF (autonomous mode) secure network to GCS authenticated AND MDL signature valid AND GCS ready, THEN push MDL over secure net to GCS.",
+   "PMV 4.6 (nouns)": "Secure net auth; MDL signature; GCS state",
+   "PMVV 4.7 (values)": "Net: authed / unauth | Sig: valid / invalid | GCS: ready / not-ready"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA8: MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8 | PMD 4.5 (IF/THEN): IF (autonomous mode) secure network to GCS authenticated AND MDL signature valid AND GCS ready, THEN push MDL over secure net to GCS. | PMV 4.6 (nouns): Secure net auth; MDL signature; GCS state | PMVV 4.7 (values): Net: authed / unauth | Sig: valid / invalid | GCS: ready / not-ready"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA9: MC_MAM_Ingress (InitializeAutonomy)_CA9",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA9: MC_MAM_Ingress (InitializeAutonomy)_CA9",
+   "PMD 4.5 (IF/THEN)": "IF MAM boot BIT pass AND ROE loaded AND abort criteria loaded AND mode = Loyal Wingman or Autonomous, THEN initialize MAM supervisory authority.",
+   "PMV 4.6 (nouns)": "MAM BIT; ROE state; abort criteria; mode",
+   "PMVV 4.7 (values)": "BIT: pass / fail | ROE: loaded / missing | Abort: loaded / missing | Mode: Crewed / LW / Auto"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA9: MC_MAM_Ingress (InitializeAutonomy)_CA9 | PMD 4.5 (IF/THEN): IF MAM boot BIT pass AND ROE loaded AND abort criteria loaded AND mode = Loyal Wingman or Autonomous, THEN initialize MAM supervisory authority. | PMV 4.6 (nouns): MAM BIT; ROE state; abort criteria; mode | PMVV 4.7 (values): BIT: pass / fail | ROE: loaded / missing | Abort: loaded / missing | Mode: Crewed / LW / Auto"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA10: MC_CSPUAV_Ingress (LaunchProgram)_CA10",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA10: MC_CSPUAV_Ingress (LaunchProgram)_CA10",
+   "PMD 4.5 (IF/THEN)": "IF CSP present AND UAV BIT pass AND encrypted RF mesh keys loaded AND MDL UAV tasking loaded, THEN launch UAV swarm and establish mesh.",
+   "PMV 4.6 (nouns)": "CSP state; UAV BIT; mesh keys; UAV tasking",
+   "PMVV 4.7 (values)": "CSP: present / absent | UAV BIT: pass / fail | Keys: loaded / missing | Task: loaded / missing"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA10: MC_CSPUAV_Ingress (LaunchProgram)_CA10 | PMD 4.5 (IF/THEN): IF CSP present AND UAV BIT pass AND encrypted RF mesh keys loaded AND MDL UAV tasking loaded, THEN launch UAV swarm and establish mesh. | PMV 4.6 (nouns): CSP state; UAV BIT; mesh keys; UAV tasking | PMVV 4.7 (values): CSP: present / absent | UAV BIT: pass / fail | Keys: loaded / missing | Task: loaded / missing"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA11: PIC_MC_Engage (AuthorizeWeaponRelease)_CA11",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA11: PIC_MC_Engage (AuthorizeWeaponRelease)_CA11",
+   "PMD 4.5 (IF/THEN)": "IF (crewed) target positively identified AND stores armed AND friendly clear AND ROE satisfied, THEN authorize weapon release.",
+   "PMV 4.6 (nouns)": "Target ID; stores state; friendly clear; ROE",
+   "PMVV 4.7 (values)": "Target: positive / unknown | Stores: armed / safe | Friendly: clear / not-clear | ROE: satisfied / violated"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA11: PIC_MC_Engage (AuthorizeWeaponRelease)_CA11 | PMD 4.5 (IF/THEN): IF (crewed) target positively identified AND stores armed AND friendly clear AND ROE satisfied, THEN authorize weapon release. | PMV 4.6 (nouns): Target ID; stores state; friendly clear; ROE | PMVV 4.7 (values): Target: positive / unknown | Stores: armed / safe | Friendly: clear / not-clear | ROE: satisfied / violated"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA12: MAM_MC_Engage (AutonomousEngagement)_CA12",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA12: MAM_MC_Engage (AutonomousEngagement)_CA12",
+   "PMD 4.5 (IF/THEN)": "IF (autonomous) target identified within ROE AND supervisory constraint not violated AND GCS override not issued AND weapon authorized in mode, THEN authorize autonomous engagement.",
+   "PMV 4.6 (nouns)": "Target ID; ROE; supervisory constraint; GCS override; weapon authority",
+   "PMVV 4.7 (values)": "Target: positive / unknown | ROE: within / outside | Supervisory: valid / violated | GCS: none / override | Weapon: auth / prohibit"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA12: MAM_MC_Engage (AutonomousEngagement)_CA12 | PMD 4.5 (IF/THEN): IF (autonomous) target identified within ROE AND supervisory constraint not violated AND GCS override not issued AND weapon authorized in mode, THEN authorize autonomous engagement. | PMV 4.6 (nouns): Target ID; ROE; supervisory constraint; GCS override; weapon authority | PMVV 4.7 (values): Target: positive / unknown | ROE: within / outside | Supervisory: valid / violated | GCS: none / override | Weapon: auth / prohibit"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA13: MAM_CSP_Engage (CommandSwarm)_CA13",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA13: MAM_CSP_Engage (CommandSwarm)_CA13",
+   "PMD 4.5 (IF/THEN)": "IF swarm formation intact AND target coord valid AND ROE for swarm engagement satisfied AND GCS not overriding, THEN command swarm strike.",
+   "PMV 4.6 (nouns)": "Swarm state; target coord; swarm ROE; GCS",
+   "PMVV 4.7 (values)": "Swarm: intact / degraded | Coord: valid / invalid | ROE: satisfied / violated | GCS: none / override"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA13: MAM_CSP_Engage (CommandSwarm)_CA13 | PMD 4.5 (IF/THEN): IF swarm formation intact AND target coord valid AND ROE for swarm engagement satisfied AND GCS not overriding, THEN command swarm strike. | PMV 4.6 (nouns): Swarm state; target coord; swarm ROE; GCS | PMVV 4.7 (values): Swarm: intact / degraded | Coord: valid / invalid | ROE: satisfied / violated | GCS: none / override"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA14: MC_EWPod_Engage (ActivateJamming)_CA14",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA14: MC_EWPod_Engage (ActivateJamming)_CA14",
+   "PMD 4.5 (IF/THEN)": "IF EW target designated AND freq deconfliction done AND EW allowed in mode, THEN activate EW jamming.",
+   "PMV 4.6 (nouns)": "EW target; freq deconfliction; EW mode auth",
+   "PMVV 4.7 (values)": "Target: designated / none | Freq: deconflicted / conflict | Mode: allowed / prohibited"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA14: MC_EWPod_Engage (ActivateJamming)_CA14 | PMD 4.5 (IF/THEN): IF EW target designated AND freq deconfliction done AND EW allowed in mode, THEN activate EW jamming. | PMV 4.6 (nouns): EW target; freq deconfliction; EW mode auth | PMVV 4.7 (values): Target: designated / none | Freq: deconflicted / conflict | Mode: allowed / prohibited"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA15: PIC_MC_Engage (FireGun)_CA15",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA15: PIC_MC_Engage (FireGun)_CA15",
+   "PMD 4.5 (IF/THEN)": "IF mode = Crewed ONLY AND gun-safe area confirmed AND ROE satisfied, THEN fire gun.",
+   "PMV 4.6 (nouns)": "Mode; gun-safe area; ROE",
+   "PMVV 4.7 (values)": "Mode: Crewed / Non-crewed | Gun-safe: confirmed / not | ROE: satisfied / violated"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA15: PIC_MC_Engage (FireGun)_CA15 | PMD 4.5 (IF/THEN): IF mode = Crewed ONLY AND gun-safe area confirmed AND ROE satisfied, THEN fire gun. | PMV 4.6 (nouns): Mode; gun-safe area; ROE | PMVV 4.7 (values): Mode: Crewed / Non-crewed | Gun-safe: confirmed / not | ROE: satisfied / violated"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA16: MAM_UAVs_Egress (RecoverySequence)_CA16",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA16: MAM_UAVs_Egress (RecoverySequence)_CA16",
+   "PMD 4.5 (IF/THEN)": "IF UAV type = recoverable AND recovery zone reachable AND fuel sufficient, THEN command recovery sequence.",
+   "PMV 4.6 (nouns)": "UAV type; recovery zone; fuel state",
+   "PMVV 4.7 (values)": "Type: recoverable / expendable | Zone: reachable / not | Fuel: sufficient / low"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA16: MAM_UAVs_Egress (RecoverySequence)_CA16 | PMD 4.5 (IF/THEN): IF UAV type = recoverable AND recovery zone reachable AND fuel sufficient, THEN command recovery sequence. | PMV 4.6 (nouns): UAV type; recovery zone; fuel state | PMVV 4.7 (values): Type: recoverable / expendable | Zone: reachable / not | Fuel: sufficient / low"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA17: UAVs_Self_Egress (ZeroizeOnCompromise)_CA17",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA17: UAVs_Self_Egress (ZeroizeOnCompromise)_CA17",
+   "PMD 4.5 (IF/THEN)": "IF capture imminent (mesh lost + geofence violation + timeout) OR MAM zeroize command, THEN execute zeroize (crypto keys, MDL, mission cache).",
+   "PMV 4.6 (nouns)": "Mesh; geofence; timeout; zeroize command",
+   "PMVV 4.7 (values)": "Mesh: connected / lost | Fence: in / out | Timer: not-elapsed / elapsed | Cmd: none / issued"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA17: UAVs_Self_Egress (ZeroizeOnCompromise)_CA17 | PMD 4.5 (IF/THEN): IF capture imminent (mesh lost + geofence violation + timeout) OR MAM zeroize command, THEN execute zeroize (crypto keys, MDL, mission cache). | PMV 4.6 (nouns): Mesh; geofence; timeout; zeroize command | PMVV 4.7 (values): Mesh: connected / lost | Fence: in / out | Timer: not-elapsed / elapsed | Cmd: none / issued"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA18: Maint_SDLP_Debrief (ExtractData)_CA18",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA18: Maint_SDLP_Debrief (ExtractData)_CA18",
+   "PMD 4.5 (IF/THEN)": "IF SML cert valid AND SDLP port authorized AND Security Gateway sanitize pass, THEN extract debrief data.",
+   "PMV 4.6 (nouns)": "SML cert; SDLP state; Sec GW sanitize",
+   "PMVV 4.7 (values)": "SML: authed / unauth | Port: authorized / unauthorized | Sanitize: pass / fail"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA18: Maint_SDLP_Debrief (ExtractData)_CA18 | PMD 4.5 (IF/THEN): IF SML cert valid AND SDLP port authorized AND Security Gateway sanitize pass, THEN extract debrief data. | PMV 4.6 (nouns): SML cert; SDLP state; Sec GW sanitize | PMVV 4.7 (values): SML: authed / unauth | Port: authorized / unauthorized | Sanitize: pass / fail"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA19: GCS_MAM_Any (IssueOverride)_CA19",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA19: GCS_MAM_Any (IssueOverride)_CA19",
+   "PMD 4.5 (IF/THEN)": "IF GCS operator identifies out-of-envelope MAM behavior AND override authority credentialed, THEN issue override / abort to MAM.",
+   "PMV 4.6 (nouns)": "MAM behavior; GCS credential",
+   "PMVV 4.7 (values)": "Behavior: in-envelope / out | Cred: valid / invalid"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA19: GCS_MAM_Any (IssueOverride)_CA19 | PMD 4.5 (IF/THEN): IF GCS operator identifies out-of-envelope MAM behavior AND override authority credentialed, THEN issue override / abort to MAM. | PMV 4.6 (nouns): MAM behavior; GCS credential | PMVV 4.7 (values): Behavior: in-envelope / out | Cred: valid / invalid"
+ },
+ {
+  "sheet": "Step 4.4 – 4.7",
+  "row": "CA20: MC_HMS_Any (QueryHealth)_CA20",
+  "fields": {
+   "Control Action (Source_Dest_Mode_Function_CA#)": "CA20: MC_HMS_Any (QueryHealth)_CA20",
+   "PMD 4.5 (IF/THEN)": "Continuous: HMS reports health; fault detected triggers alert to PIC/GCS.",
+   "PMV 4.6 (nouns)": "HMS state; fault code; alert path",
+   "PMVV 4.7 (values)": "HMS: nominal / degraded | Fault: code / none | Alert: PIC / GCS / both"
+  },
+  "text": "Sheet: Step 4.4 – 4.7 | Control Action (Source_Dest_Mode_Function_CA#): CA20: MC_HMS_Any (QueryHealth)_CA20 | PMD 4.5 (IF/THEN): Continuous: HMS reports health; fault detected triggers alert to PIC/GCS. | PMV 4.6 (nouns): HMS state; fault code; alert path | PMVV 4.7 (values): HMS: nominal / degraded | Fault: code / none | Alert: PIC / GCS / both"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA1: Vendor_RMT_GroundOps (UpdateRadar)_CA1",
+  "fields": {
+   "Control Action": "CA1: Vendor_RMT_GroundOps (UpdateRadar)_CA1",
+   "Applied CA (unsafe)": "H3, H5 (compromised radar firmware → false fusion picture)",
+   "Did NOT apply CA": "H5 (no update = stale/vulnerable radar)",
+   "Too Early (E) / Late (L)": "E: H3 (before CROWS attestation) | L: H5 (rushed pre-sortie)",
+   "Stopped Short (S) / Applied Long (A)": "S: H5 (partial firmware = anomaly) | A: H3 (persistent malicious cache)"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA1: Vendor_RMT_GroundOps (UpdateRadar)_CA1 | Applied CA (unsafe): H3, H5 (compromised radar firmware → false fusion picture) | Did NOT apply CA: H5 (no update = stale/vulnerable radar) | Too Early (E) / Late (L): E: H3 (before CROWS attestation) | L: H5 (rushed pre-sortie) | Stopped Short (S) / Applied Long (A): S: H5 (partial firmware = anomaly) | A: H3 (persistent malicious cache)"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA2: Vendor_EST_GroundOps (UpdateEW)_CA2",
+  "fields": {
+   "Control Action": "CA2: Vendor_EST_GroundOps (UpdateEW)_CA2",
+   "Applied CA (unsafe)": "H3, H4 (compromised EW → false ES data → wrong ROE picture)",
+   "Did NOT apply CA": "H5 (no update = degraded EW)",
+   "Too Early (E) / Late (L)": "E: H3 | L: H5",
+   "Stopped Short (S) / Applied Long (A)": "S: H5 | A: H3"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA2: Vendor_EST_GroundOps (UpdateEW)_CA2 | Applied CA (unsafe): H3, H4 (compromised EW → false ES data → wrong ROE picture) | Did NOT apply CA: H5 (no update = degraded EW) | Too Early (E) / Late (L): E: H3 | L: H5 | Stopped Short (S) / Applied Long (A): S: H5 | A: H3"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA3: Vendor_EFT_GroundOps (UpdateFADEC)_CA3",
+  "fields": {
+   "Control Action": "CA3: Vendor_EFT_GroundOps (UpdateFADEC)_CA3",
+   "Applied CA (unsafe)": "H1, H5 (engine mis-response → envelope excursion)",
+   "Did NOT apply CA": "H5 (no update = known-vulnerable engine ctrl)",
+   "Too Early (E) / Late (L)": "E: H1 | L: H5",
+   "Stopped Short (S) / Applied Long (A)": "S: H5 | A: H1 (persistent malicious behavior)"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA3: Vendor_EFT_GroundOps (UpdateFADEC)_CA3 | Applied CA (unsafe): H1, H5 (engine mis-response → envelope excursion) | Did NOT apply CA: H5 (no update = known-vulnerable engine ctrl) | Too Early (E) / Late (L): E: H1 | L: H5 | Stopped Short (S) / Applied Long (A): S: H5 | A: H1 (persistent malicious behavior)"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA4: Maint_PMA_GroundOps (UpdateFirmware)_CA4",
+  "fields": {
+   "Control Action": "CA4: Maint_PMA_GroundOps (UpdateFirmware)_CA4",
+   "Applied CA (unsafe)": "H5, H3 (bad firmware to MC/HMS/VMC)",
+   "Did NOT apply CA": "H5 (no update = stale LRU)",
+   "Too Early (E) / Late (L)": "E: H5 | L: H5",
+   "Stopped Short (S) / Applied Long (A)": "S: H5 | A: H3"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA4: Maint_PMA_GroundOps (UpdateFirmware)_CA4 | Applied CA (unsafe): H5, H3 (bad firmware to MC/HMS/VMC) | Did NOT apply CA: H5 (no update = stale LRU) | Too Early (E) / Late (L): E: H5 | L: H5 | Stopped Short (S) / Applied Long (A): S: H5 | A: H3"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA5: Maint_MSK_GroundOps (UpdateMAM)_CA5",
+  "fields": {
+   "Control Action": "CA5: Maint_MSK_GroundOps (UpdateMAM)_CA5",
+   "Applied CA (unsafe)": "H4, H3 (bad AI model, altered ROE)",
+   "Did NOT apply CA": "H4 (no update = stale ROE library)",
+   "Too Early (E) / Late (L)": "E: H4 | L: H4",
+   "Stopped Short (S) / Applied Long (A)": "S: H4 | A: H4 (persistent altered autonomy)"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA5: Maint_MSK_GroundOps (UpdateMAM)_CA5 | Applied CA (unsafe): H4, H3 (bad AI model, altered ROE) | Did NOT apply CA: H4 (no update = stale ROE library) | Too Early (E) / Late (L): E: H4 | L: H4 | Stopped Short (S) / Applied Long (A): S: H4 | A: H4 (persistent altered autonomy)"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA6: MPS_DTC_MissionPlan (BuildMDL)_CA6",
+  "fields": {
+   "Control Action": "CA6: MPS_DTC_MissionPlan (BuildMDL)_CA6",
+   "Applied CA (unsafe)": "H3 (bad MDL from compromised MPS)",
+   "Did NOT apply CA": "H5 (no MDL = no mission)",
+   "Too Early (E) / Late (L)": "E: H3 | L: H5",
+   "Stopped Short (S) / Applied Long (A)": "S: H3 (partial MDL) | A: H3"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA6: MPS_DTC_MissionPlan (BuildMDL)_CA6 | Applied CA (unsafe): H3 (bad MDL from compromised MPS) | Did NOT apply CA: H5 (no MDL = no mission) | Too Early (E) / Late (L): E: H3 | L: H5 | Stopped Short (S) / Applied Long (A): S: H3 (partial MDL) | A: H3"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA7: Maint_DTU_MissionPlan (LoadMDL)_CA7",
+  "fields": {
+   "Control Action": "CA7: Maint_DTU_MissionPlan (LoadMDL)_CA7",
+   "Applied CA (unsafe)": "H3 (bad DTC → MC compromise)",
+   "Did NOT apply CA": "H5 (no MDL loaded = no mission)",
+   "Too Early (E) / Late (L)": "E: H3 (before validation) | L: H5 (mid-flight)",
+   "Stopped Short (S) / Applied Long (A)": "S: H5 | A: H3"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA7: Maint_DTU_MissionPlan (LoadMDL)_CA7 | Applied CA (unsafe): H3 (bad DTC → MC compromise) | Did NOT apply CA: H5 (no MDL loaded = no mission) | Too Early (E) / Late (L): E: H3 (before validation) | L: H5 (mid-flight) | Stopped Short (S) / Applied Long (A): S: H5 | A: H3"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA8: MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8",
+  "fields": {
+   "Control Action": "CA8: MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8",
+   "Applied CA (unsafe)": "H3, H4 (compromised ground picture)",
+   "Did NOT apply CA": "H4 (no MDL to GCS = no autonomous authority)",
+   "Too Early (E) / Late (L)": "E: H3 | L: H4",
+   "Stopped Short (S) / Applied Long (A)": "S: H4 | A: H3"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA8: MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8 | Applied CA (unsafe): H3, H4 (compromised ground picture) | Did NOT apply CA: H4 (no MDL to GCS = no autonomous authority) | Too Early (E) / Late (L): E: H3 | L: H4 | Stopped Short (S) / Applied Long (A): S: H4 | A: H3"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA9: MC_MAM_Ingress (InitializeAutonomy)_CA9",
+  "fields": {
+   "Control Action": "CA9: MC_MAM_Ingress (InitializeAutonomy)_CA9",
+   "Applied CA (unsafe)": "H4 (autonomy initialized with wrong ROE / abort criteria)",
+   "Did NOT apply CA": "H4 (MAM without ROE = uncontrolled autonomy)",
+   "Too Early (E) / Late (L)": "E: H4 | L: H4",
+   "Stopped Short (S) / Applied Long (A)": "S: H4 | A: H4"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA9: MC_MAM_Ingress (InitializeAutonomy)_CA9 | Applied CA (unsafe): H4 (autonomy initialized with wrong ROE / abort criteria) | Did NOT apply CA: H4 (MAM without ROE = uncontrolled autonomy) | Too Early (E) / Late (L): E: H4 | L: H4 | Stopped Short (S) / Applied Long (A): S: H4 | A: H4"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA10: MC_CSPUAV_Ingress (LaunchProgram)_CA10",
+  "fields": {
+   "Control Action": "CA10: MC_CSPUAV_Ingress (LaunchProgram)_CA10",
+   "Applied CA (unsafe)": "H4, H2 (wrong tasking = wrong target)",
+   "Did NOT apply CA": "H5 (no swarm = no capability)",
+   "Too Early (E) / Late (L)": "E: H4 | L: H4",
+   "Stopped Short (S) / Applied Long (A)": "S: H4 | A: H4"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA10: MC_CSPUAV_Ingress (LaunchProgram)_CA10 | Applied CA (unsafe): H4, H2 (wrong tasking = wrong target) | Did NOT apply CA: H5 (no swarm = no capability) | Too Early (E) / Late (L): E: H4 | L: H4 | Stopped Short (S) / Applied Long (A): S: H4 | A: H4"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA11: PIC_MC_Engage (AuthorizeWeaponRelease)_CA11",
+  "fields": {
+   "Control Action": "CA11: PIC_MC_Engage (AuthorizeWeaponRelease)_CA11",
+   "Applied CA (unsafe)": "H2 (bad target = friendly / civilian hit)",
+   "Did NOT apply CA": "H5 (weapon never released = mission fail)",
+   "Too Early (E) / Late (L)": "E: H2 (early release) | L: H2 (late = miss)",
+   "Stopped Short (S) / Applied Long (A)": "S: H2 (partial burst) | A: H2 (over-long = collateral)"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA11: PIC_MC_Engage (AuthorizeWeaponRelease)_CA11 | Applied CA (unsafe): H2 (bad target = friendly / civilian hit) | Did NOT apply CA: H5 (weapon never released = mission fail) | Too Early (E) / Late (L): E: H2 (early release) | L: H2 (late = miss) | Stopped Short (S) / Applied Long (A): S: H2 (partial burst) | A: H2 (over-long = collateral)"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA12: MAM_MC_Engage (AutonomousEngagement)_CA12",
+  "fields": {
+   "Control Action": "CA12: MAM_MC_Engage (AutonomousEngagement)_CA12",
+   "Applied CA (unsafe)": "H4, H2 (autonomy engages outside ROE)",
+   "Did NOT apply CA": "H4 (MAM refuses valid engagement)",
+   "Too Early (E) / Late (L)": "E: H4 | L: H4",
+   "Stopped Short (S) / Applied Long (A)": "S: H4 | A: H4"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA12: MAM_MC_Engage (AutonomousEngagement)_CA12 | Applied CA (unsafe): H4, H2 (autonomy engages outside ROE) | Did NOT apply CA: H4 (MAM refuses valid engagement) | Too Early (E) / Late (L): E: H4 | L: H4 | Stopped Short (S) / Applied Long (A): S: H4 | A: H4"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA13: MAM_CSP_Engage (CommandSwarm)_CA13",
+  "fields": {
+   "Control Action": "CA13: MAM_CSP_Engage (CommandSwarm)_CA13",
+   "Applied CA (unsafe)": "H4, H2 (swarm strikes non-combatant infra)",
+   "Did NOT apply CA": "H5 (no swarm effect)",
+   "Too Early (E) / Late (L)": "E: H4 | L: H4",
+   "Stopped Short (S) / Applied Long (A)": "S: H4 | A: H4"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA13: MAM_CSP_Engage (CommandSwarm)_CA13 | Applied CA (unsafe): H4, H2 (swarm strikes non-combatant infra) | Did NOT apply CA: H5 (no swarm effect) | Too Early (E) / Late (L): E: H4 | L: H4 | Stopped Short (S) / Applied Long (A): S: H4 | A: H4"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA14: MC_EWPod_Engage (ActivateJamming)_CA14",
+  "fields": {
+   "Control Action": "CA14: MC_EWPod_Engage (ActivateJamming)_CA14",
+   "Applied CA (unsafe)": "H2, H3 (jams friendly comms or wrong freq)",
+   "Did NOT apply CA": "H5 (no EW = mission degraded)",
+   "Too Early (E) / Late (L)": "E: H2 | L: H2",
+   "Stopped Short (S) / Applied Long (A)": "S: H2 | A: H2"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA14: MC_EWPod_Engage (ActivateJamming)_CA14 | Applied CA (unsafe): H2, H3 (jams friendly comms or wrong freq) | Did NOT apply CA: H5 (no EW = mission degraded) | Too Early (E) / Late (L): E: H2 | L: H2 | Stopped Short (S) / Applied Long (A): S: H2 | A: H2"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA15: PIC_MC_Engage (FireGun)_CA15",
+  "fields": {
+   "Control Action": "CA15: PIC_MC_Engage (FireGun)_CA15",
+   "Applied CA (unsafe)": "H2, H4 (fired in autonomous mode = constraint violation)",
+   "Did NOT apply CA": "H5 (unable to engage close-range)",
+   "Too Early (E) / Late (L)": "E: H2 (before positive ID) | L: H2 (target moved)",
+   "Stopped Short (S) / Applied Long (A)": "S: H2 (short burst = ineffective) | A: H2 (long burst = collateral)"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA15: PIC_MC_Engage (FireGun)_CA15 | Applied CA (unsafe): H2, H4 (fired in autonomous mode = constraint violation) | Did NOT apply CA: H5 (unable to engage close-range) | Too Early (E) / Late (L): E: H2 (before positive ID) | L: H2 (target moved) | Stopped Short (S) / Applied Long (A): S: H2 (short burst = ineffective) | A: H2 (long burst = collateral)"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA16: MAM_UAVs_Egress (RecoverySequence)_CA16",
+  "fields": {
+   "Control Action": "CA16: MAM_UAVs_Egress (RecoverySequence)_CA16",
+   "Applied CA (unsafe)": "H1, H4 (MAM authorizes recovery over friendly territory / bad timing)",
+   "Did NOT apply CA": "H5 (loss of UAVs)",
+   "Too Early (E) / Late (L)": "E: H1 (before RTB clear) | L: H1 (fuel starvation)",
+   "Stopped Short (S) / Applied Long (A)": "S: H5 (partial recovery) | A: H1 (over-long flight home)"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA16: MAM_UAVs_Egress (RecoverySequence)_CA16 | Applied CA (unsafe): H1, H4 (MAM authorizes recovery over friendly territory / bad timing) | Did NOT apply CA: H5 (loss of UAVs) | Too Early (E) / Late (L): E: H1 (before RTB clear) | L: H1 (fuel starvation) | Stopped Short (S) / Applied Long (A): S: H5 (partial recovery) | A: H1 (over-long flight home)"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA17: UAVs_Self_Egress (ZeroizeOnCompromise)_CA17",
+  "fields": {
+   "Control Action": "CA17: UAVs_Self_Egress (ZeroizeOnCompromise)_CA17",
+   "Applied CA (unsafe)": "H4 (zeroize valid asset by mistake)",
+   "Did NOT apply CA": "H3 (compromised UAV survives with keys)",
+   "Too Early (E) / Late (L)": "E: H4 (too aggressive) | L: H3 (too late = enemy captures data)",
+   "Stopped Short (S) / Applied Long (A)": "S: H3 (incomplete wipe) | A: H4"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA17: UAVs_Self_Egress (ZeroizeOnCompromise)_CA17 | Applied CA (unsafe): H4 (zeroize valid asset by mistake) | Did NOT apply CA: H3 (compromised UAV survives with keys) | Too Early (E) / Late (L): E: H4 (too aggressive) | L: H3 (too late = enemy captures data) | Stopped Short (S) / Applied Long (A): S: H3 (incomplete wipe) | A: H4"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA18: Maint_SDLP_Debrief (ExtractData)_CA18",
+  "fields": {
+   "Control Action": "CA18: Maint_SDLP_Debrief (ExtractData)_CA18",
+   "Applied CA (unsafe)": "H3 (contaminated SML pulls data through Sec GW)",
+   "Did NOT apply CA": "(n/a — post-mission)",
+   "Too Early (E) / Late (L)": "(n/a)",
+   "Stopped Short (S) / Applied Long (A)": "(n/a)"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA18: Maint_SDLP_Debrief (ExtractData)_CA18 | Applied CA (unsafe): H3 (contaminated SML pulls data through Sec GW) | Did NOT apply CA: (n/a — post-mission) | Too Early (E) / Late (L): (n/a) | Stopped Short (S) / Applied Long (A): (n/a)"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA19: GCS_MAM_Any (IssueOverride)_CA19",
+  "fields": {
+   "Control Action": "CA19: GCS_MAM_Any (IssueOverride)_CA19",
+   "Applied CA (unsafe)": "H4 (bad override removes valid autonomy)",
+   "Did NOT apply CA": "H4 (missed override — MAM acts out of envelope)",
+   "Too Early (E) / Late (L)": "E: H4 (override before actual violation) | L: H4 (too late)",
+   "Stopped Short (S) / Applied Long (A)": "S: H4 (partial override) | A: H4"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA19: GCS_MAM_Any (IssueOverride)_CA19 | Applied CA (unsafe): H4 (bad override removes valid autonomy) | Did NOT apply CA: H4 (missed override — MAM acts out of envelope) | Too Early (E) / Late (L): E: H4 (override before actual violation) | L: H4 (too late) | Stopped Short (S) / Applied Long (A): S: H4 (partial override) | A: H4"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "CA20: MC_HMS_Any (QueryHealth)_CA20",
+  "fields": {
+   "Control Action": "CA20: MC_HMS_Any (QueryHealth)_CA20",
+   "Applied CA (unsafe)": "H5 (false-normal report hides real fault)",
+   "Did NOT apply CA": "H5 (fault missed)",
+   "Too Early (E) / Late (L)": "E: H5 | L: H5",
+   "Stopped Short (S) / Applied Long (A)": "S: H5 | A: H5"
+  },
+  "text": "Sheet: Step 5 | Control Action: CA20: MC_HMS_Any (QueryHealth)_CA20 | Applied CA (unsafe): H5 (false-normal report hides real fault) | Did NOT apply CA: H5 (fault missed) | Too Early (E) / Late (L): E: H5 | L: H5 | Stopped Short (S) / Applied Long (A): S: H5 | A: H5"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "#",
+  "fields": {
+   "Control Action": "#",
+   "Applied CA (unsafe)": "Node",
+   "Did NOT apply CA": "Bus / Path",
+   "Too Early (E) / Late (L)": "Hazards Enabled",
+   "Stopped Short (S) / Applied Long (A)": "Category"
+  },
+  "text": "Sheet: Step 5 | Control Action: # | Applied CA (unsafe): Node | Did NOT apply CA: Bus / Path | Too Early (E) / Late (L): Hazards Enabled | Stopped Short (S) / Applied Long (A): Category"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 1",
+  "fields": {
+   "Control Action": "KT-C 1",
+   "Applied CA (unsafe)": "Security Gateway (2 installed)",
+   "Did NOT apply CA": "Mediates ALL external ports to 1553 / 1760 / AFDX",
+   "Too Early (E) / Late (L)": "H3, H4, H5",
+   "Stopped Short (S) / Applied Long (A)": "Mission System"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 1 | Applied CA (unsafe): Security Gateway (2 installed) | Did NOT apply CA: Mediates ALL external ports to 1553 / 1760 / AFDX | Too Early (E) / Late (L): H3, H4, H5 | Stopped Short (S) / Applied Long (A): Mission System"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 2",
+  "fields": {
+   "Control Action": "KT-C 2",
+   "Applied CA (unsafe)": "Mission Autonomy Module (MAM)",
+   "Did NOT apply CA": "1553 + ARINC 664; MSK for updates",
+   "Too Early (E) / Late (L)": "H3, H4",
+   "Stopped Short (S) / Applied Long (A)": "Mission System"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 2 | Applied CA (unsafe): Mission Autonomy Module (MAM) | Did NOT apply CA: 1553 + ARINC 664; MSK for updates | Too Early (E) / Late (L): H3, H4 | Stopped Short (S) / Applied Long (A): Mission System"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 4",
+  "fields": {
+   "Control Action": "KT-C 4",
+   "Applied CA (unsafe)": "DTC / DTU + Type-1 crypto chain",
+   "Did NOT apply CA": "External media path to MC via Sec GW",
+   "Too Early (E) / Late (L)": "H3, H4",
+   "Stopped Short (S) / Applied Long (A)": "Mission Support"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 4 | Applied CA (unsafe): DTC / DTU + Type-1 crypto chain | Did NOT apply CA: External media path to MC via Sec GW | Too Early (E) / Late (L): H3, H4 | Stopped Short (S) / Applied Long (A): Mission Support"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 5",
+  "fields": {
+   "Control Action": "KT-C 5",
+   "Applied CA (unsafe)": "MPS (Mission Planning System) enclave",
+   "Did NOT apply CA": "Classified enclave; produces MDL",
+   "Too Early (E) / Late (L)": "H3, H4",
+   "Stopped Short (S) / Applied Long (A)": "Mission Support (2nd degree)"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 5 | Applied CA (unsafe): MPS (Mission Planning System) enclave | Did NOT apply CA: Classified enclave; produces MDL | Too Early (E) / Late (L): H3, H4 | Stopped Short (S) / Applied Long (A): Mission Support (2nd degree)"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 6",
+  "fields": {
+   "Control Action": "KT-C 6",
+   "Applied CA (unsafe)": "Vendor direct-connect ports (Radar, EW, FADEC)",
+   "Did NOT apply CA": "Bypass Security Gateway",
+   "Too Early (E) / Late (L)": "H1, H3, H5",
+   "Stopped Short (S) / Applied Long (A)": "Mission Support (1st degree)"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 6 | Applied CA (unsafe): Vendor direct-connect ports (Radar, EW, FADEC) | Did NOT apply CA: Bypass Security Gateway | Too Early (E) / Late (L): H1, H3, H5 | Stopped Short (S) / Applied Long (A): Mission Support (1st degree)"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 7",
+  "fields": {
+   "Control Action": "KT-C 7",
+   "Applied CA (unsafe)": "Ground Control Station (GCS)",
+   "Did NOT apply CA": "ATDL / SATCOM; primary authority in Autonomous",
+   "Too Early (E) / Late (L)": "H4",
+   "Stopped Short (S) / Applied Long (A)": "Mission System (in Autonomous)"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 7 | Applied CA (unsafe): Ground Control Station (GCS) | Did NOT apply CA: ATDL / SATCOM; primary authority in Autonomous | Too Early (E) / Late (L): H4 | Stopped Short (S) / Applied Long (A): Mission System (in Autonomous)"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 8",
+  "fields": {
+   "Control Action": "KT-C 8",
+   "Applied CA (unsafe)": "CROWS / PMO update-validation chain",
+   "Did NOT apply CA": "Every tool / firmware transits",
+   "Too Early (E) / Late (L)": "H3, H5",
+   "Stopped Short (S) / Applied Long (A)": "Ancillary Support"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 8 | Applied CA (unsafe): CROWS / PMO update-validation chain | Did NOT apply CA: Every tool / firmware transits | Too Early (E) / Late (L): H3, H5 | Stopped Short (S) / Applied Long (A): Ancillary Support"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 9",
+  "fields": {
+   "Control Action": "KT-C 9",
+   "Applied CA (unsafe)": "MSMT (Mission Systems Maint Terminal)",
+   "Did NOT apply CA": "Maint Ethernet + reach to 1553",
+   "Too Early (E) / Late (L)": "H3, H5",
+   "Stopped Short (S) / Applied Long (A)": "Mission Support"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 9 | Applied CA (unsafe): MSMT (Mission Systems Maint Terminal) | Did NOT apply CA: Maint Ethernet + reach to 1553 | Too Early (E) / Late (L): H3, H5 | Stopped Short (S) / Applied Long (A): Mission Support"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 10",
+  "fields": {
+   "Control Action": "KT-C 10",
+   "Applied CA (unsafe)": "PMA (Portable Maintenance Aid)",
+   "Did NOT apply CA": "Maint Ethernet",
+   "Too Early (E) / Late (L)": "H5",
+   "Stopped Short (S) / Applied Long (A)": "Mission Support"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 10 | Applied CA (unsafe): PMA (Portable Maintenance Aid) | Did NOT apply CA: Maint Ethernet | Too Early (E) / Late (L): H5 | Stopped Short (S) / Applied Long (A): Mission Support"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 11",
+  "fields": {
+   "Control Action": "KT-C 11",
+   "Applied CA (unsafe)": "Sensor Fusion Engine (SFE)",
+   "Did NOT apply CA": "1553 + ARINC 664",
+   "Too Early (E) / Late (L)": "H3",
+   "Stopped Short (S) / Applied Long (A)": "Mission System"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 11 | Applied CA (unsafe): Sensor Fusion Engine (SFE) | Did NOT apply CA: 1553 + ARINC 664 | Too Early (E) / Late (L): H3 | Stopped Short (S) / Applied Long (A): Mission System"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 12",
+  "fields": {
+   "Control Action": "KT-C 12",
+   "Applied CA (unsafe)": "Stores Management System (SMS)",
+   "Did NOT apply CA": "1553 + 1760 (via WIU)",
+   "Too Early (E) / Late (L)": "H2",
+   "Stopped Short (S) / Applied Long (A)": "Mission System"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 12 | Applied CA (unsafe): Stores Management System (SMS) | Did NOT apply CA: 1553 + 1760 (via WIU) | Too Early (E) / Late (L): H2 | Stopped Short (S) / Applied Long (A): Mission System"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 13",
+  "fields": {
+   "Control Action": "KT-C 13",
+   "Applied CA (unsafe)": "Weapon Interface Unit (WIU)",
+   "Did NOT apply CA": "1553 ↔ 1760 translator",
+   "Too Early (E) / Late (L)": "H2",
+   "Stopped Short (S) / Applied Long (A)": "Mission System"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 13 | Applied CA (unsafe): Weapon Interface Unit (WIU) | Did NOT apply CA: 1553 ↔ 1760 translator | Too Early (E) / Late (L): H2 | Stopped Short (S) / Applied Long (A): Mission System"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 14",
+  "fields": {
+   "Control Action": "KT-C 14",
+   "Applied CA (unsafe)": "CSP + UAV RF Mesh",
+   "Did NOT apply CA": "External RF; 1760 + AFDX aircraft-side",
+   "Too Early (E) / Late (L)": "H2, H4, H5",
+   "Stopped Short (S) / Applied Long (A)": "Mission System"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 14 | Applied CA (unsafe): CSP + UAV RF Mesh | Did NOT apply CA: External RF; 1760 + AFDX aircraft-side | Too Early (E) / Late (L): H2, H4, H5 | Stopped Short (S) / Applied Long (A): Mission System"
+ },
+ {
+  "sheet": "Step 5",
+  "row": "KT-C 15",
+  "fields": {
+   "Control Action": "KT-C 15",
+   "Applied CA (unsafe)": "CASU / CTK physical tool control",
+   "Did NOT apply CA": "Physical access; Commander memo",
+   "Too Early (E) / Late (L)": "H3, H5",
+   "Stopped Short (S) / Applied Long (A)": "Ancillary Support"
+  },
+  "text": "Sheet: Step 5 | Control Action: KT-C 15 | Applied CA (unsafe): CASU / CTK physical tool control | Did NOT apply CA: Physical access; Commander memo | Too Early (E) / Late (L): H3, H5 | Stopped Short (S) / Applied Long (A): Ancillary Support"
+ },
+ {
+  "sheet": "Step 6",
+  "row": "Step 6: Causal Scenarios (one per KT-C)",
+  "fields": {
+   "lines": 9
+  },
+  "text": "Sheet: Step 6 | Step 6: Causal Scenarios (one per KT-C)\nStep 6: Causal Scenarios (one per KT-C)\nPROMPT: Create ONE causal scenario for each KT-C identified in Step 5. Use the template block below. Fill fields 1-5 for each scenario. This is the deliverable your Commander reads.\nTEMPLATE (copy this block for each KT-C):\nTitle of Brief: [Short name for this KT-C scenario]\n1. Hazardous Control Action(s): [Which CA and which bin from Step 5]\n2. Hazards: [Which H# from Step 3 are enabled by that HCA]\n3. Losses: [Which L# from Step 2 does the hazard chain drive to]\n4. How the HCA(s) leads to Mission Failure (IOTCT): [Narrative walking Source -> Dest -> Effect -> Hazard -> Loss]\n5. Problem solving recommendations to Commander (HARDWARE / SOFTWARE / POLICY / PROCEDURE): [Concrete recs]"
+ },
+ {
+  "sheet": "Step 6",
+  "row": "--- F/A-13 Scenario Slot #1 — KT-C 1 of Top 5 ---",
+  "fields": {
+   "lines": 7
+  },
+  "text": "Sheet: Step 6 | --- F/A-13 Scenario Slot #1 — KT-C 1 of Top 5 ---\n--- F/A-13 Scenario Slot #1 — KT-C 1 of Top 5 ---\nTitle of Brief: Security Gateway Compromise → total external ingress failure\n1. Hazardous Control Action(s): CA4 Applied (bad PMA firmware accepted); CA7 Applied (bad DTC accepted); CA18 Applied (contaminated debrief sanitize) — BIN 1 (Applied unsafely).\n2. Hazards: H3 (compromised battlespace data reaches MC), H4 (compromised autonomy inputs reach MAM), H5 (compromised firmware reaches LRUs).\n3. Losses: UL-1 (loss of life via bad targeting), UL-2 (aircraft loss), UL-3 (loss of MAM control), UL-4 (sortie generation halted), UL-5 (civilian infrastructure damage).\n4. How the HCA(s) leads to Mission Failure (IOTCT): Adversary at vendor or supply-chain partner inserts implant → CROWS attestation bypassed OR PMO distribution compromised → Security Gateway accepts malicious payload as 'attested' → payload propagates via 1553 / 1760 / AFDX to MC, MAM, SFE, SMS → aircraft flies mission with corrupted state → engagement occurs on false data OR autonomy violates ROE OR engine fails → joint-force freedom of maneuver denied (IOTCT breach).\n5. Problem solving recommendations to Commander (HW / SW / POLICY / PROCEDURE): (HW) Redundant hardware-attested gateway pairs with independent vendor chains; NO-GO enforcement when both Sec GWs report any anomaly. (SW) Require dual-vendor CROWS re-attestation per update; every accepted payload logged to write-once media. (POL) MACCE monthly review of Sec GW acceptance log; two-person integrity for any gateway config change. (PROC) Pre-sortie Sec GW health check appended to 781A."
+ },
+ {
+  "sheet": "Step 6",
+  "row": "--- F/A-13 Scenario Slot #2 — KT-C 2 of Top 5 ---",
+  "fields": {
+   "lines": 7
+  },
+  "text": "Sheet: Step 6 | --- F/A-13 Scenario Slot #2 — KT-C 2 of Top 5 ---\n--- F/A-13 Scenario Slot #2 — KT-C 2 of Top 5 ---\nTitle of Brief: MAM autonomy library poisoning\n1. Hazardous Control Action(s): CA5 Applied (bad MSK-loaded AI model); CA9 Applied (autonomy initialized with altered ROE); CA12 Applied (autonomous engagement outside intended ROE) — BIN 1 (Applied unsafely).\n2. Hazards: H3 (faulty battlespace data drives autonomy), H4 (autonomy violates constraint by design).\n3. Losses: UL-1, UL-3, UL-4, UL-5.\n4. How the HCA(s) leads to Mission Failure (IOTCT): Adversary compromises MSK bench (air-gap is nominally secure but bench itself is the target) OR compromises AI-model vendor supply chain → CROWS-attested model has planted backdoor or biased weights → loaded onto MAM → in mission, MAM engages a target class the ROE was supposed to prohibit, OR refuses valid engagements → autonomy constraint violation → collateral damage OR mission failure → joint-force freedom of maneuver denied.\n5. Problem solving recommendations to Commander (HW / SW / POLICY / PROCEDURE): (HW) MSK bench in dedicated SCIF with tamper-evident chassis. (SW) Multi-source AI-model validation (ensemble check pre-deployment); shadow-ROE behavior sampling in flight (any drift = alert to GCS). (POL) Adversarial red-team of model against ROE test set before every deployment; two-person integrity for all MSK loads. (PROC) Require GCS operator to positively confirm every autonomous engagement above a defined threat category."
+ },
+ {
+  "sheet": "Step 6",
+  "row": "--- F/A-13 Scenario Slot #3 — KT-C 4 (DTC / DTU + Type-1 cry",
+  "fields": {
+   "lines": 7
+  },
+  "text": "Sheet: Step 6 | --- F/A-13 Scenario Slot #3 — KT-C 4 (DTC / DTU + Type-1 cry\n--- F/A-13 Scenario Slot #3 — KT-C 4 (DTC / DTU + Type-1 crypto chain) — 3rd of Top 5 ---\nTitle of Brief: MDL supply-chain compromise via encrypted DTC\n1. Hazardous Control Action(s): CA6 Applied (bad MDL from compromised MPS); CA7 Applied (bad DTC accepted at DTU); CA8 Applied (bad MDL pushed to GCS) — BIN 1.\n2. Hazards: H3, H4.\n3. Losses: UL-1, UL-3, UL-4, UL-5.\n4. How the HCA(s) leads to Mission Failure (IOTCT): Adversary in classified enclave OR at Type-1 key management OR intercepts DTC in physical custody OR compromises SML → produces DTC with valid Type-1 crypto but malicious MDL payload → DTU accepts, MC distributes to MAM / SFE / SMS → autonomy loaded with attacker's ROE, sensor fusion loaded with false threat library, weapons loaded with altered profiles → engagement occurs on adversary-chosen target picture → fratricide, collateral, or refused engagement → mission fails.\n5. Problem solving recommendations to Commander (HW / SW / POLICY / PROCEDURE): (HW) Add out-of-band MDL manifest transmitted via a separate secure channel for cross-check at load. (SW) DTC hash verification independent of Type-1 crypto (defense in depth against key compromise); Sec GW MDL manifest reconciliation on load. (POL) Two-person integrity for MDL build at MPS; rotate Type-1 keys every mission cycle; MACCE verification of DTC provenance before load. (PROC) Formal chain-of-custody sign-off from MPS through Maintenance to aircraft."
+ },
+ {
+  "sheet": "Step 6",
+  "row": "--- F/A-13 Scenario Slot #4 — KT-C 6 (Vendor direct-connect ",
+  "fields": {
+   "lines": 7
+  },
+  "text": "Sheet: Step 6 | --- F/A-13 Scenario Slot #4 — KT-C 6 (Vendor direct-connect \n--- F/A-13 Scenario Slot #4 — KT-C 6 (Vendor direct-connect ports) — 4th of Top 5 ---\nTitle of Brief: Vendor tool becomes ingress vector — bypasses Security Gateway\n1. Hazardous Control Action(s): CA1 Applied (bad RMT firmware); CA2 Applied (bad EST firmware); CA3 Applied (bad EFT firmware) — BIN 1.\n2. Hazards: H1 (FADEC mis-response → envelope excursion), H3 (radar / EW false picture), H5 (LRU degraded state).\n3. Losses: UL-1, UL-2, UL-4.\n4. How the HCA(s) leads to Mission Failure (IOTCT): Adversary compromises vendor's tool build environment OR compromises tech's laptop between CROWS validation and use OR insider tech uses off-inventory tool → connects to Radar / EW / FADEC direct-connect port (bypasses Security Gateway entirely) → malicious firmware loaded → in flight, radar reports false threats OR EW jams friendly OR engine responds unexpectedly to throttle input → envelope excursion, engagement error, or mission abort → freedom of maneuver denied.\n5. Problem solving recommendations to Commander (HW / SW / POLICY / PROCEDURE): (HW) Extend Security Gateway mediation to all vendor direct-connect ports (highest-priority engineering change request); tamper-evident seals on vendor tools with pre / post inspection. (SW) CROWS re-attestation of vendor tool at the aircraft (not just at build); dual-tool validation for high-consequence firmware (two independent vendor tools must agree before FADEC / radar / EW update). (POL) Mandatory MACCE-witnessed tool connection for every vendor direct-connect update. (PROC) Vendor connection recorded on the 781A with MACCE cosign."
+ },
+ {
+  "sheet": "Step 6",
+  "row": "--- F/A-13 Scenario Slot #5 — KT-C 7 (Ground Control Station",
+  "fields": {
+   "lines": 7
+  },
+  "text": "Sheet: Step 6 | --- F/A-13 Scenario Slot #5 — KT-C 7 (Ground Control Station\n--- F/A-13 Scenario Slot #5 — KT-C 7 (Ground Control Station) — 5th of Top 5 ---\nTitle of Brief: GCS override authority hijacked in Autonomous mode\n1. Hazardous Control Action(s): CA19 Applied (unauthorized GCS override); CA19 Not Applied (missed override when MAM out-of-envelope) — BIN 1 and BIN 2; CA8 Applied (compromised MDL pushed to GCS).\n2. Hazards: H4.\n3. Losses: UL-1, UL-3, UL-4, UL-5.\n4. How the HCA(s) leads to Mission Failure (IOTCT): Adversary compromises GCS via secure-network path from MPS OR via SATCOM / ATDL exploit OR via credential theft → adversary can now issue false overrides (removing valid MAM authority) or block valid overrides (letting MAM proceed on bad data) → in Autonomous mode, MAM either loses supervisory control or gains unchecked authority → autonomy constraint violation → collateral damage or aircraft loss → freedom of maneuver denied.\n5. Problem solving recommendations to Commander (HW / SW / POLICY / PROCEDURE): (HW) Hardware attestation of GCS consoles at each mission start; CAC + biometric + presence detection for operator. (SW) Per-transaction credential re-authentication for any override; MPS → GCS channel via two independent secure networks with cross-validation. (POL) Multi-console consensus required for override (Pilot Operator + Mission Commander). (PROC) MAM abort criteria that trigger safe-mode return regardless of GCS state if defined thresholds are crossed."
+ }
+]

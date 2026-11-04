@@ -1,6 +1,6 @@
 # Eval Questions — Mission Assurance RAG
 
-All 20 written (2026-11-04). Each has: the question, the document(s) that should be cited, and what a correct answer must contain. Score each run on three binaries: **cited correctly**, **grounded** (no claims beyond the context), **refusal correct** (negatives only).
+All 20 written (2026-11-04). **v1.1** after baseline run: Q6 must-contain aligned to guide wording, Q8 rewritten, Q11 replaced — see notes in each row. Each has: the question, the document(s) that should be cited, and what a correct answer must contain. Score each run on three binaries: **cited correctly**, **grounded** (no claims beyond the context), **refusal correct** (negatives only).
 
 Split: 8 factual lookups, 7 cross-document (2 bridge FMA-C ↔ doctrine/STPA, 1 bridge threat_data ↔ worked_example, 1 structured multi-hop), 5 negatives (correct answer is "Not found in corpus").
 
@@ -21,9 +21,9 @@ Machine-readable copy: `eval_questions.json` (same IDs).
 | 3 | How does DoDD 3020.40 define "Mission Assurance"? | DoDD 3020.40 | A process to protect or ensure the continued function and resilience of capabilities and assets... (verbatim or near) |
 | 4 | What does NIST SP 800-30 define as the components of risk? | NIST SP 800-30 r1 | threat, vulnerability, likelihood, impact |
 | 5 | What are the three sources every FMA-C workbook entry must trace back to? | How-To Guide §1.3 | commander/exercise brief, data sheet, architecture diagram |
-| 6 | What are the four bins in a Step 5 hazardous control action analysis? | How-To Guide Step 5; STPA Handbook | not provided / provided causes hazard / wrong timing or order / stopped too soon or applied too long |
+| 6 | What are the four bins in a Step 5 hazardous control action analysis? | How-To Guide Step 5; STPA Handbook | not provided when required / provided when not required / wrong time or order / applied too long or stopped too soon (guide wording; report's applied-unsafe / not-applied / early-late / short-long also accepted) |
 | 7 | What is MITRE ATT&CK technique T1190, and which tactic does it fall under? | ATT&CK Enterprise STIX (threat_data) | Exploit Public-Facing Application; Initial Access. Tests the STIX ingest. |
-| 8 | What does the System and Communications Protection (SC) control family in NIST SP 800-53 r5 cover? | NIST SP 800-53 r5 §3.18 | At least two of: boundary protection, cryptographic protection, transmission confidentiality/integrity, denial-of-service protection |
+| 8 | What does NIST SP 800-53 r5 control SC-7 (Boundary Protection) require? | NIST SP 800-53 r5 SC-7 | At least two of: external boundary, managed interfaces, monitor/control communications. *(v1.1: rewritten — r5 has no family-scope prose, so the original 'what does the SC family cover' was unanswerable.)* |
 
 ## Cross-document (7)
 
@@ -31,7 +31,7 @@ Machine-readable copy: `eval_questions.json` (same IDs).
 |---|---|---|---|
 | 9 | Which NIST SP 800-53 control families does SP 800-82 single out as needing OT-specific tailoring? | 800-82 r3 + 800-53 r5 | Names at least two families 800-82 discusses (e.g., AC, IA, SC, SI) and ties them to OT constraints |
 | 10 | How does the RMF in DoDI 8510.01 relate to the NIST SP 800-37 process? | 8510.01 + 800-37 | States 8510.01 implements/adopts the NIST RMF for DoD |
-| 11 | How does FMA-C relate to RMF — does it replace it? | How-To Guide §1 (+ 800-37) | FMA-C identifies mission-assurance requirements that inform control selection; it sits upstream of and does not replace RMF |
+| 11 | The F/A-13 Peacemaker report scores risk as Likelihood × Impact. How does NIST SP 800-30 define likelihood and impact, and what scale and bands does the report use? | 800-30 r1 + Peacemaker §5.4 | likelihood / adverse impact definitions; 1–5 scales, Score = L×I, 20–25 Critical. *(v1.1: replaced 'does FMA-C replace RMF' — the How-To Guide never states the relationship, so the baseline refusal was correct and the question was unanswerable.)* |
 | 12 | Which NIST SP 800-30 concept corresponds most closely to an FMA-C Unacceptable Loss, and where do they differ? | 800-30 r1 + How-To Guide Step 2 | adverse impact; UL is commander-defined and mission-level, not system-level |
 | 13 | For risk register entry R-05 in the F/A-13 assessment, which hazardous control action does it reference, and which Unacceptable Loss does that HCA trace to? | Risk Assessment xlsx (Risk Register sheet, `FMA-C HCA Reference` column) + Peacemaker report §5.2 (HCA → hazard) + §3.2 (hazard → UL) | CA19 (GCS_MAM_Any IssueOverride) → H4 → UL-3. Three hops across a JSON-row chunk and two report sections. Partial credit: CA19 + UL-3 without H4. |
 | 14 | Where does the FMA-C Step 5 four-bin analysis come from, and what does the STPA Handbook call the equivalent analysis? | STPA Handbook (doctrine) + How-To Guide Step 5 (methodology) | Unsafe Control Action (UCA); the four UCA types; STPA / Leveson. Vocabulary bridge FMA-C ↔ parent discipline. |

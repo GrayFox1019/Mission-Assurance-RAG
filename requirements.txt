@@ -4,5 +4,4 @@ sentence-transformers>=3.0
 chromadb>=0.5
 python-dotenv>=1.0
 numpy>=1.26
-tiktoken>=0.7
 openpyxl>=3.1

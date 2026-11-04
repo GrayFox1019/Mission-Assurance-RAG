@@ -11,3 +11,4 @@ data/index/
 .DS_Store
 Thumbs.db
 data/corpus/media/
+__pycache__/

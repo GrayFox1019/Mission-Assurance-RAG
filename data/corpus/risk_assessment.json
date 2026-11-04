@@ -1,0 +1,97 @@
+[
+ {
+  "sheet": "Risk Register",
+  "row": "R-01",
+  "fields": {
+   "Risk ID": "R-01",
+   "KT-C": "KT-C 1 — Security Gateway (×2)",
+   "Threat / Vulnerability Description": "Adversary supply-chain or firmware compromise reaches the Security Gateway; an attested-but-malicious payload passes into 1553 / 1760 / AFDX and propagates to MC, MAM, SFE, SMS. Single choke point for trust-boundary enforcement; both gateways failed = NO-GO.",
+   "FMA-C HCA Reference": "CA4: Maint_PMA_GroundOps (UpdateFirmware)_CA4 — Applied when unsafe; CA7: Maint_DTU_MissionPlan (LoadMDL)_CA7 — Applied when unsafe; CA18: Maint_SDLP_Debrief (ExtractData)_CA18 — Applied when unsafe",
+   "Hazards Enabled": "H3, H4, H5",
+   "Primary UL": "UL-2, UL-3, UL-4",
+   "Likelihood (1-5)": "3",
+   "Impact (1-5)": "5",
+   "Risk Score (LxI)": "15",
+   "Risk Band": "High",
+   "Vulnerability Exists Y/N": "Y",
+   "Mitigation Strategies": "HW: redundant hardware-attested Security Gateway pairs from independent vendor chains; tamper-evident seals verified at each installation.; SW: dual-vendor CROWS re-attestation per payload; write-once acceptance logging; behavioral anomaly detection with alerts to MACCE console.; Policy: MACCE monthly review of acceptance logs; NO-GO on any single-gateway anomaly; rotate attestation keys per COMSEC cadence."
+  },
+  "text": "Sheet: Risk Register | Risk ID: R-01 | KT-C: KT-C 1 — Security Gateway (×2) | Threat / Vulnerability Description: Adversary supply-chain or firmware compromise reaches the Security Gateway; an attested-but-malicious payload passes into 1553 / 1760 / AFDX and propagates to MC, MAM, SFE, SMS. Single choke point for trust-boundary enforcement; both gateways failed = NO-GO. | FMA-C HCA Reference: CA4: Maint_PMA_GroundOps (UpdateFirmware)_CA4 — Applied when unsafe; CA7: Maint_DTU_MissionPlan (LoadMDL)_CA7 — Applied when unsafe; CA18: Maint_SDLP_Debrief (ExtractData)_CA18 — Applied when unsafe | Hazards Enabled: H3, H4, H5 | Primary UL: UL-2, UL-3, UL-4 | Likelihood (1-5): 3 | Impact (1-5): 5 | Risk Score (LxI): 15 | Risk Band: High | Vulnerability Exists Y/N: Y | Mitigation Strategies: HW: redundant hardware-attested Security Gateway pairs from independent vendor chains; tamper-evident seals verified at each installation.; SW: dual-vendor CROWS re-attestation per payload; write-once acceptance logging; behavioral anomaly detection with alerts to MACCE console.; Policy: MACCE monthly review of acceptance logs; NO-GO on any single-gateway anomaly; rotate attestation keys per COMSEC cadence."
+ },
+ {
+  "sheet": "Risk Register",
+  "row": "R-02",
+  "fields": {
+   "Risk ID": "R-02",
+   "KT-C": "KT-C 2 — Mission Autonomy Module (MAM)",
+   "Threat / Vulnerability Description": "AI-model poisoning or ROE-library tampering via the MSK bench or the vendor AI supply chain; MAM authorizes engagements outside intended ROE or refuses valid engagements. A single poisoned model propagates across the whole Autonomous mission set.",
+   "FMA-C HCA Reference": "CA5: Maint_MSK_GroundOps (UpdateMAM)_CA5 — Applied when unsafe; CA9: MC_MAM_Ingress (InitializeAutonomy)_CA9 — Applied when unsafe; CA12: MAM_MC_Engage (AutonomousEngagement)_CA12 — Applied when unsafe",
+   "Hazards Enabled": "H3, H4",
+   "Primary UL": "UL-1, UL-3, UL-5",
+   "Likelihood (1-5)": "3",
+   "Impact (1-5)": "5",
+   "Risk Score (LxI)": "15",
+   "Risk Band": "High",
+   "Vulnerability Exists Y/N": "Y",
+   "Mitigation Strategies": "HW: MSK bench in a dedicated SCIF with continuous physical monitoring; tamper-evident hardware for bench and transport media.; SW: multi-source (ensemble) AI-model validation with two independent validators; adversarial red-team against the ROE test set pre-deployment; in-flight shadow-ROE drift monitoring.; Policy: two-person integrity for every MSK load and MAM model deployment; GCS positive-confirm above a defined threat category; MACCE-witnessed model loads."
+  },
+  "text": "Sheet: Risk Register | Risk ID: R-02 | KT-C: KT-C 2 — Mission Autonomy Module (MAM) | Threat / Vulnerability Description: AI-model poisoning or ROE-library tampering via the MSK bench or the vendor AI supply chain; MAM authorizes engagements outside intended ROE or refuses valid engagements. A single poisoned model propagates across the whole Autonomous mission set. | FMA-C HCA Reference: CA5: Maint_MSK_GroundOps (UpdateMAM)_CA5 — Applied when unsafe; CA9: MC_MAM_Ingress (InitializeAutonomy)_CA9 — Applied when unsafe; CA12: MAM_MC_Engage (AutonomousEngagement)_CA12 — Applied when unsafe | Hazards Enabled: H3, H4 | Primary UL: UL-1, UL-3, UL-5 | Likelihood (1-5): 3 | Impact (1-5): 5 | Risk Score (LxI): 15 | Risk Band: High | Vulnerability Exists Y/N: Y | Mitigation Strategies: HW: MSK bench in a dedicated SCIF with continuous physical monitoring; tamper-evident hardware for bench and transport media.; SW: multi-source (ensemble) AI-model validation with two independent validators; adversarial red-team against the ROE test set pre-deployment; in-flight shadow-ROE drift monitoring.; Policy: two-person integrity for every MSK load and MAM model deployment; GCS positive-confirm above a defined threat category; MACCE-witnessed model loads."
+ },
+ {
+  "sheet": "Risk Register",
+  "row": "R-03",
+  "fields": {
+   "Risk ID": "R-03",
+   "KT-C": "KT-C 4 — DTC / DTU + Type-1 Crypto Chain",
+   "Threat / Vulnerability Description": "MDL supply-chain compromise: adversary in the MPS enclave, at the Type-1 key-management function, in the physical DTC custody chain, or on the SML alternate loader. A valid crypto envelope carrying a malicious MDL corrupts every downstream consumer (SFE threat library, MAM ROE, SMS weapon profiles, GCS copy).",
+   "FMA-C HCA Reference": "CA6: MPS_DTC_MissionPlan (BuildMDL)_CA6 — Applied when unsafe; CA7: Maint_DTU_MissionPlan (LoadMDL)_CA7 — Applied when unsafe; CA8: MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8 — Applied when unsafe",
+   "Hazards Enabled": "H3, H4",
+   "Primary UL": "UL-1, UL-4, UL-5",
+   "Likelihood (1-5)": "4",
+   "Impact (1-5)": "5",
+   "Risk Score (LxI)": "20",
+   "Risk Band": "Critical",
+   "Vulnerability Exists Y/N": "Y",
+   "Mitigation Strategies": "HW: hardware token / smart-card authentication at DTC insertion; tamper-evident packaging for every DTC in transit.; SW: independent DTC hash verification separate from Type-1 crypto (both must pass); Security Gateway reconciles an out-of-band MDL manifest and fails closed on mismatch.; Policy: two-person integrity for MDL build at MPS; rotate Type-1 keys every mission cycle; MACCE provenance check before load; signed chain-of-custody log at each hand-off."
+  },
+  "text": "Sheet: Risk Register | Risk ID: R-03 | KT-C: KT-C 4 — DTC / DTU + Type-1 Crypto Chain | Threat / Vulnerability Description: MDL supply-chain compromise: adversary in the MPS enclave, at the Type-1 key-management function, in the physical DTC custody chain, or on the SML alternate loader. A valid crypto envelope carrying a malicious MDL corrupts every downstream consumer (SFE threat library, MAM ROE, SMS weapon profiles, GCS copy). | FMA-C HCA Reference: CA6: MPS_DTC_MissionPlan (BuildMDL)_CA6 — Applied when unsafe; CA7: Maint_DTU_MissionPlan (LoadMDL)_CA7 — Applied when unsafe; CA8: MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8 — Applied when unsafe | Hazards Enabled: H3, H4 | Primary UL: UL-1, UL-4, UL-5 | Likelihood (1-5): 4 | Impact (1-5): 5 | Risk Score (LxI): 20 | Risk Band: Critical | Vulnerability Exists Y/N: Y | Mitigation Strategies: HW: hardware token / smart-card authentication at DTC insertion; tamper-evident packaging for every DTC in transit.; SW: independent DTC hash verification separate from Type-1 crypto (both must pass); Security Gateway reconciles an out-of-band MDL manifest and fails closed on mismatch.; Policy: two-person integrity for MDL build at MPS; rotate Type-1 keys every mission cycle; MACCE provenance check before load; signed chain-of-custody log at each hand-off."
+ },
+ {
+  "sheet": "Risk Register",
+  "row": "R-04",
+  "fields": {
+   "Risk ID": "R-04",
+   "KT-C": "KT-C 6 — Vendor Direct-Connect Ports (Radar / EW / FADEC)",
+   "Threat / Vulnerability Description": "Vendor tools (RMT / EST / EFT) bypass the Security Gateway by design, so the vendor tool is the sole trust gate at the aircraft. A compromised tool build, a custody gap between CROWS validation and use, a substituted off-inventory tool, or an insider tech loads malicious firmware directly to the AESA, EW Suite, or FADEC.",
+   "FMA-C HCA Reference": "CA1: Vendor_RMT_GroundOps (UpdateRadar)_CA1 — Applied when unsafe; CA2: Vendor_EST_GroundOps (UpdateEW)_CA2 — Applied when unsafe; CA3: Vendor_EFT_GroundOps (UpdateFADEC)_CA3 — Applied when unsafe",
+   "Hazards Enabled": "H1, H3, H5",
+   "Primary UL": "UL-2, UL-4",
+   "Likelihood (1-5)": "4",
+   "Impact (1-5)": "5",
+   "Risk Score (LxI)": "20",
+   "Risk Band": "Critical",
+   "Vulnerability Exists Y/N": "Y",
+   "Mitigation Strategies": "HW: priority ECR to the F/A-13 Program Office to extend Security Gateway mediation to all three vendor ports; tamper-evident seals on vendor tools with pre/post-connection inspection.; SW: CROWS re-attestation of the vendor tool at the aircraft; dual-tool validation for high-consequence firmware; write-once log of every vendor-tool connection.; Policy: mandatory MACCE-witnessed connection for every vendor direct-connect session; Commander-signed memo naming authorized vendor technicians."
+  },
+  "text": "Sheet: Risk Register | Risk ID: R-04 | KT-C: KT-C 6 — Vendor Direct-Connect Ports (Radar / EW / FADEC) | Threat / Vulnerability Description: Vendor tools (RMT / EST / EFT) bypass the Security Gateway by design, so the vendor tool is the sole trust gate at the aircraft. A compromised tool build, a custody gap between CROWS validation and use, a substituted off-inventory tool, or an insider tech loads malicious firmware directly to the AESA, EW Suite, or FADEC. | FMA-C HCA Reference: CA1: Vendor_RMT_GroundOps (UpdateRadar)_CA1 — Applied when unsafe; CA2: Vendor_EST_GroundOps (UpdateEW)_CA2 — Applied when unsafe; CA3: Vendor_EFT_GroundOps (UpdateFADEC)_CA3 — Applied when unsafe | Hazards Enabled: H1, H3, H5 | Primary UL: UL-2, UL-4 | Likelihood (1-5): 4 | Impact (1-5): 5 | Risk Score (LxI): 20 | Risk Band: Critical | Vulnerability Exists Y/N: Y | Mitigation Strategies: HW: priority ECR to the F/A-13 Program Office to extend Security Gateway mediation to all three vendor ports; tamper-evident seals on vendor tools with pre/post-connection inspection.; SW: CROWS re-attestation of the vendor tool at the aircraft; dual-tool validation for high-consequence firmware; write-once log of every vendor-tool connection.; Policy: mandatory MACCE-witnessed connection for every vendor direct-connect session; Commander-signed memo naming authorized vendor technicians."
+ },
+ {
+  "sheet": "Risk Register",
+  "row": "R-05",
+  "fields": {
+   "Risk ID": "R-05",
+   "KT-C": "KT-C 7 — Ground Control Station (GCS) in Autonomous mode",
+   "Threat / Vulnerability Description": "GCS override authority hijacked via SATCOM / ATDL exploit, or via credential theft on the secure-network path from MPS; adversary issues false overrides that remove valid MAM authority, or blocks valid overrides so MAM proceeds on bad data. In Autonomous mode the GCS is the primary human authority in the loop.",
+   "FMA-C HCA Reference": "CA19: GCS_MAM_Any (IssueOverride)_CA19 — Applied when unsafe; CA19: GCS_MAM_Any (IssueOverride)_CA19 — Not applied when needed; CA8: MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8 — Applied when unsafe",
+   "Hazards Enabled": "H4",
+   "Primary UL": "UL-1, UL-3, UL-5",
+   "Likelihood (1-5)": "3",
+   "Impact (1-5)": "5",
+   "Risk Score (LxI)": "15",
+   "Risk Band": "High",
+   "Vulnerability Exists Y/N": "Y",
+   "Mitigation Strategies": "HW: TPM-anchored hardware attestation of every GCS console at mission start; physical presence detection; console-to-network binding.; SW: per-transaction credential re-authentication for override; MPS → GCS over two independent secure networks with cross-validation; independent MAM abort criteria that trigger safe-mode RTB regardless of GCS state.; Policy: multi-console consensus for override (Pilot/Operator AND Mission Commander); CAC + biometric + presence authentication; console attestation as a formal pre-mission checklist step."
+  },
+  "text": "Sheet: Risk Register | Risk ID: R-05 | KT-C: KT-C 7 — Ground Control Station (GCS) in Autonomous mode | Threat / Vulnerability Description: GCS override authority hijacked via SATCOM / ATDL exploit, or via credential theft on the secure-network path from MPS; adversary issues false overrides that remove valid MAM authority, or blocks valid overrides so MAM proceeds on bad data. In Autonomous mode the GCS is the primary human authority in the loop. | FMA-C HCA Reference: CA19: GCS_MAM_Any (IssueOverride)_CA19 — Applied when unsafe; CA19: GCS_MAM_Any (IssueOverride)_CA19 — Not applied when needed; CA8: MPS_GCS_MissionPlan (PushMDLAutonomous)_CA8 — Applied when unsafe | Hazards Enabled: H4 | Primary UL: UL-1, UL-3, UL-5 | Likelihood (1-5): 3 | Impact (1-5): 5 | Risk Score (LxI): 15 | Risk Band: High | Vulnerability Exists Y/N: Y | Mitigation Strategies: HW: TPM-anchored hardware attestation of every GCS console at mission start; physical presence detection; console-to-network binding.; SW: per-transaction credential re-authentication for override; MPS → GCS over two independent secure networks with cross-validation; independent MAM abort criteria that trigger safe-mode RTB regardless of GCS state.; Policy: multi-console consensus for override (Pilot/Operator AND Mission Commander); CAC + biometric + presence authentication; console attestation as a formal pre-mission checklist step."
+ }
+]
