@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/raw/
+data/index/
+*.docx
+*.xlsx
+*.pptx
+*.pdf
+.DS_Store
+Thumbs.db
+data/corpus/media/
