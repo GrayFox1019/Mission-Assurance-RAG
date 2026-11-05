@@ -1,4 +1,4 @@
-# Mission Assurance RAG
+﻿# Mission Assurance RAG
 
 A retrieval-augmented Q&A assistant over public DoD and NIST mission-assurance doctrine, the MIT STPA Handbook, the MITRE ATT&CK Enterprise dataset, and a notional Functional Mission Analysis – Cyber (FMA-C) worked example. Ask it a doctrine question; it answers only from retrieved passages, cites every claim as `[document, section or page (source_type)]`, and says **"Not found in corpus."** when the documents don't support an answer.
 
@@ -54,7 +54,7 @@ Chunking is source-aware: doctrine PDFs get ~800-token windows with 100 overlap 
 ## Quickstart
 
 ```powershell
-git clone https://github.com/GrayFox1019/mission-assurance-rag && cd mission-assurance-rag
+git clone https://github.com/GrayFox1019/Mission-Assurance-RAG && cd mission-assurance-rag
 python -m venv .venv && .\.venv\Scripts\Activate.ps1      # Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
 Copy-Item .env.example .env                                 # add your ANTHROPIC_API_KEY
