@@ -1,4 +1,4 @@
-﻿# Mission Assurance RAG
+# Mission Assurance RAG
 
 A retrieval-augmented Q&A assistant over public DoD and NIST mission-assurance doctrine, the MIT STPA Handbook, the MITRE ATT&CK Enterprise dataset, and a notional Functional Mission Analysis – Cyber (FMA-C) worked example. Ask it a doctrine question; it answers only from retrieved passages, cites every claim as `[document, section or page (source_type)]`, and says **"Not found in corpus."** when the documents don't support an answer.
 
@@ -54,7 +54,7 @@ Chunking is source-aware: doctrine PDFs get ~800-token windows with 100 overlap 
 ## Quickstart
 
 ```powershell
-git clone https://github.com/GrayFox1019/Mission-Assurance-RAG && cd mission-assurance-rag
+git clone https://github.com/GrayFox1019/Mission-Assurance-RAG && cd Mission-Assurance-RAG
 python -m venv .venv && .\.venv\Scripts\Activate.ps1      # Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
 Copy-Item .env.example .env                                 # add your ANTHROPIC_API_KEY
@@ -119,7 +119,7 @@ The design choices that matter for IL5 / air-gapped deployment:
 - **No telemetry.** chromadb is used as a local persistent client; the numpy fallback (`chunks.jsonl` + `embeddings.npy`) needs nothing but numpy.
 - **One network call.** Generation goes to the Claude API. For a government-hosted deployment the swap is the endpoint and model name in `.env`; `query.py` has one function (`ask_claude`) that touches the network.
 - **No secrets in the repo.** `.env` is gitignored; `.env.example` documents the variables.
-- **Content hygiene.** Nothing from real-unit work product is in the corpus. A pre-commit grep for unit and platform names is part of the workflow (`docs/eval_questions.md`, notes).
+- **Content hygiene.** Nothing from real-unit work product is in the corpus; the worked example is fully notional. A pre-commit grep for real unit and platform names runs before every push.
 
 ## Next steps
 
@@ -132,3 +132,7 @@ The design choices that matter for IL5 / air-gapped deployment:
 ## Sources
 
 See `docs/SOURCES.md`. Public documents from esd.whs.mil, csrc.nist.gov, psas.scripts.mit.edu and github.com/mitre-attack; the FMA-C How-To Guide, F/A-13 report, workbooks and data sheet are the author's notional training products.
+
+## License
+
+MIT for the code. The FMA-C How-To Guide, F/A-13 Peacemaker report, workbooks and data sheet are the author's notional training products and are included for use with this repository; public documents retain their own terms.
