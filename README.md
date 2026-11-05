@@ -77,9 +77,12 @@ Twenty questions written before any code, split 8 factual / 7 cross-document / 5
 | 3 | k=10 | 15/15 | 7/15 | 5/5 |
 | 4 | + BM25 lexical retrieval, reciprocal-rank fusion | 15/15 | 7/15 | 5/5 |
 | 5 | Back to 800 tokens; **document + section name indexed with every chunk** | 15/15 | 9/15 | 5/5 |
-| 6 | **`max_tokens` 900 → 2500** | 15/15 | **11/15** | 5/5 |
+| 6 | **`max_tokens` 900 → 2500** — shipped configuration | 15/15 | **11/15** | 5/5 |
+| 7 | Per-sheet slot cap + plural folding in BM25 + table syntax stripped from indexed text — run twice, **reverted** | 15/15 | 9/15, 9/15 | 5/5 |
 
 ¹ One of the eight was a substring match on a partial answer; the stricter scorer used from run 2 onward counts it as 7/15.
+
+Noise floor: the API offers no temperature control, and two questions (Q8, Q9) flipped between pass and fail across runs 6, 7 and 7b with *identical* retrieved passages. Treat ±1 on the grounded column as noise; a change has to move it by two to count. Run 7 did — in the wrong direction (the stripped table text nudged the report's §5.4 risk table out of Q11's top 10), so it was reverted and the shipped code is run 6.
 
 Transcripts for every run, including the retrieved passages and the full answers, are in `results/`.
 
@@ -124,6 +127,7 @@ The design choices that matter for IL5 / air-gapped deployment:
 ## Next steps
 
 - Query expansion for the method↔discipline vocabulary gap (Q14): a small synonym map (`four-bin → unsafe control action`, `unacceptable loss → loss / adverse impact`) applied before retrieval.
+- Tables embed badly. The report's KT-C list (§5.3) ranks ~100th in dense retrieval for "What are the KT-C nodes for the F/A-13?" because it is a 15-row markdown table; fifteen one-row workbook chunks that each say "KT-C" outrank it. Run 7 tried stripping table syntax from the indexed text and capping rows per sheet — it helped that question's ranks (dense 107→67, BM25 30→10) but cost two eval questions, so it was reverted. The real fix is probably a per-table summary chunk ("§5.3 lists fifteen KT-C: Security Gateway, MAM, …") generated at ingest, not a tokenizer tweak.
 - Source-type-aware slot allocation so a cross-document question is guaranteed at least one passage from each named source type.
 - A re-ranker only if the above two don't close Q13 and Q14 — it hasn't been the bottleneck so far.
 - ATT&CK relationships (technique → mitigation → 800-53 control) as graph edges rather than flat technique chunks.
