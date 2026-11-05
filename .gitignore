@@ -12,3 +12,4 @@ data/index/
 Thumbs.db
 data/corpus/media/
 __pycache__/
+*.log

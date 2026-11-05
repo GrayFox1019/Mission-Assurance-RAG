@@ -87,6 +87,11 @@ class Chunk:
     page_end: int = 0
     extra: dict = field(default_factory=dict)
 
+    def index_text(self) -> str:
+        """What the retrievers see: document + section header, then the body. The header lets a question
+        that names its source ("How does DoDD 3020.40 define…", "the F/A-13 Peacemaker report…") match."""
+        return f"{self.doc} — {self.section}\n{self.text}"
+
     def meta(self) -> dict:
         m = {
             "doc": self.doc,
@@ -426,7 +431,7 @@ def embed(texts: list[str]) -> np.ndarray:
 def write_numpy_store(chunks: list[Chunk], vecs: np.ndarray) -> None:
     with (INDEX / "chunks.jsonl").open("w", encoding="utf-8") as f:
         for c in chunks:
-            f.write(json.dumps({"id": c.id, "text": c.text, **c.meta()}, ensure_ascii=False) + "\n")
+            f.write(json.dumps({"id": c.id, "text": c.text, "index_text": c.index_text(), **c.meta()}, ensure_ascii=False) + "\n")
     np.save(INDEX / "embeddings.npy", vecs)
     print(f"  numpy store: {len(chunks)} chunks -> data/index/chunks.jsonl + embeddings.npy")
 
@@ -448,7 +453,7 @@ def write_chroma(chunks: list[Chunk], vecs: np.ndarray) -> None:
         batch = chunks[i:i + B]
         col.add(
             ids=[c.id for c in batch],
-            documents=[c.text for c in batch],
+            documents=[c.index_text() for c in batch],
             metadatas=[c.meta() for c in batch],
             embeddings=vecs[i:i + B].tolist(),
         )
@@ -483,7 +488,7 @@ def main() -> None:
         return
 
     print(f"\nEmbedding with {EMBED_MODEL} (local)…")
-    vecs = embed([c.text for c in chunks])
+    vecs = embed([c.index_text() for c in chunks])
     write_numpy_store(chunks, vecs)
     write_chroma(chunks, vecs)
     print("\nDone.")

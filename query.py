@@ -7,9 +7,12 @@ Usage:
   python query.py --no-llm "T1190"            # retrieval only, no API call
   python query.py --no-id-boost "..."         # pure dense retrieval (baseline comparison)
 
-Retrieval = local MiniLM embeddings (chroma if present, else numpy cosine) + an optional
-exact-match boost for identifiers in the question (R-05, T1190, CA19, SC-7, UL-3 …), because a
-small embedding model does not reliably distinguish "T1190" from "T1195".
+Retrieval = hybrid:
+  * dense  — local MiniLM embeddings (chroma if present, else numpy cosine)
+  * lexical — BM25 over the same chunks (rank_bm25), fused with dense by reciprocal rank
+  * id boost — chunks whose label IS an identifier in the question (R-05, T1190, CA19 …) are pinned
+Doctrine questions turn on exact vocabulary ("Mission Assurance" as a defined term, "Unsafe Control
+Action", "Peacemaker"); a small embedding model blurs those, BM25 does not.  --no-bm25 disables fusion.
 """
 from __future__ import annotations
 
@@ -48,6 +51,15 @@ ID_PATTERNS = [
 ]
 
 
+TOKEN_RE = re.compile(r"[a-z0-9][a-z0-9.\-/]*")
+
+
+def tokenize(text: str) -> list[str]:
+    toks = TOKEN_RE.findall(text.lower())
+    # also index identifier variants without punctuation so "T1190" and "ul-3"/"ul3" both hit
+    return toks + [t.replace("-", "").replace(".", "") for t in toks if "-" in t or "." in t]
+
+
 # ----------------------------------------------------------------------------
 # Index loading
 # ----------------------------------------------------------------------------
@@ -72,9 +84,22 @@ class Store:
             self.col = None
         from sentence_transformers import SentenceTransformer
         self.model = SentenceTransformer(EMBED_MODEL)
+        try:
+            from rank_bm25 import BM25Okapi
+            self.bm25 = BM25Okapi([tokenize(c.get("index_text") or (c["doc"] + " " + c["section"] + " " + c["text"]))
+                                   for c in self.chunks])
+        except ImportError:
+            self.bm25 = None
 
     def backend(self) -> str:
-        return "chroma" if self.col is not None else "numpy"
+        return ("chroma" if self.col is not None else "numpy") + ("+bm25" if self.bm25 is not None else "")
+
+    def lexical(self, question: str, k: int) -> list[tuple[str, float]]:
+        if self.bm25 is None:
+            return []
+        scores = self.bm25.get_scores(tokenize(question))
+        top = np.argsort(-scores)[:k]
+        return [(self.chunks[i]["id"], float(scores[i])) for i in top if scores[i] > 0]
 
     def embed(self, question: str) -> np.ndarray:
         return self.model.encode([question], normalize_embeddings=True)[0].astype(np.float32)
@@ -98,34 +123,49 @@ class Store:
         sims = self.vecs @ (self.embed(question) if q is None else q)
         hits = []
         for i, c in enumerate(self.chunks):
+            label = c["section"].upper().replace(" ", "")
             hay = (c["text"] + " " + c["section"]).upper().replace(" ", "")
             n = sum(1 for t in ids_in_q if t in hay)
             if n:
-                hits.append((n, float(sims[i]), c["id"]))
-        hits.sort(key=lambda x: (-x[0], -x[1]))
-        return [cid for _, _, cid in hits[:limit]]
+                # a chunk that IS the identifier (its section label carries it) beats one that merely mentions it
+                identity = sum(1 for t in ids_in_q if t in label)
+                hits.append((identity, n, float(sims[i]), c["id"]))
+        hits.sort(key=lambda x: (-x[0], -x[1], -x[2]))
+        return [cid for *_, cid in hits[:limit]]
 
 
-def retrieve(store: Store, question: str, k: int = TOP_K, id_boost: bool = True) -> list[dict]:
-    """Return top-k chunk dicts with a 'score' field. ID-matched chunks are pinned to the top (max k//2)."""
+def rrf(*rankings: list[tuple[str, float]], c: int = 60) -> list[tuple[str, float]]:
+    """Reciprocal-rank fusion of several ranked lists of (id, score)."""
+    fused: dict[str, float] = {}
+    for ranking in rankings:
+        for rank, (cid, _) in enumerate(ranking, 1):
+            fused[cid] = fused.get(cid, 0.0) + 1.0 / (c + rank)
+    return sorted(fused.items(), key=lambda x: -x[1])
+
+
+def retrieve(store: Store, question: str, k: int = TOP_K, id_boost: bool = True, bm25: bool = True) -> list[dict]:
+    """Return top-k chunk dicts. Order: id-matched chunks (max k//2), then RRF(dense, bm25)."""
     q = store.embed(question)
-    dense = store.dense(question, k * 2, q=q)
+    dense = store.dense(question, k * 3, q=q)
+    lexical = store.lexical(question, k * 3) if bm25 else []
+    fused = rrf(dense, lexical) if lexical else dense
     order: list[str] = []
     if id_boost:
         for cid in store.id_matches(question, limit=max(1, k // 2), q=q):
             if cid not in order:
                 order.append(cid)
-    for cid, _ in dense:
+    for cid, _ in fused:
         if cid not in order:
             order.append(cid)
         if len(order) >= k:
             break
-    dscore = dict(dense)
+    dscore, lscore = dict(dense), dict(lexical)
     out = []
     for cid in order[:k]:
         c = dict(store.by_id[cid])
         c["score"] = round(dscore.get(cid, 0.0), 3)
-        c["boosted"] = cid not in dscore
+        c["bm25"] = round(lscore.get(cid, 0.0), 1)
+        c["boosted"] = cid not in dscore and cid not in lscore
         out.append(c)
     return out
 
@@ -140,7 +180,7 @@ def ask_claude(question: str, passages: list[dict]) -> str:
     client = anthropic.Anthropic()
     msg = client.messages.create(
         model=MODEL,
-        max_tokens=900,
+        max_tokens=2500,   # the model reserves a chunk of this for internal reasoning; 900 truncated answers
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": build_user_message(question, passages)}],
     )
@@ -148,9 +188,9 @@ def ask_claude(question: str, passages: list[dict]) -> str:
 
 
 def answer_question(question: str, store: Store | None = None, k: int = TOP_K,
-                    id_boost: bool = True, llm: bool = True) -> dict:
+                    id_boost: bool = True, llm: bool = True, bm25: bool = True) -> dict:
     store = store or Store()
-    passages = retrieve(store, question, k=k, id_boost=id_boost)
+    passages = retrieve(store, question, k=k, id_boost=id_boost, bm25=bm25)
     answer = ask_claude(question, passages) if llm else ""
     cited = [p["cite"] for p in passages if p["cite"] in answer]
     return {
@@ -170,18 +210,20 @@ def main() -> None:
     ap.add_argument("--k", type=int, default=TOP_K)
     ap.add_argument("--show-context", action="store_true", help="print retrieved passages")
     ap.add_argument("--no-llm", action="store_true", help="retrieval only")
-    ap.add_argument("--no-id-boost", action="store_true", help="pure dense retrieval")
+    ap.add_argument("--no-id-boost", action="store_true", help="disable identifier pinning")
+    ap.add_argument("--no-bm25", action="store_true", help="dense only, no lexical fusion")
     args = ap.parse_args()
     question = " ".join(args.question)
 
     store = Store()
-    res = answer_question(question, store, k=args.k, id_boost=not args.no_id_boost, llm=not args.no_llm)
+    res = answer_question(question, store, k=args.k, id_boost=not args.no_id_boost, llm=not args.no_llm,
+                          bm25=not args.no_bm25)
 
-    print(f"\nQ: {question}\n[retrieval: {res['backend']}, k={args.k}, id_boost={not args.no_id_boost}]\n")
+    print(f"\nQ: {question}\n[retrieval: {res['backend']}, k={args.k}, id_boost={not args.no_id_boost}, bm25={not args.no_bm25}]\n")
     if args.show_context or args.no_llm:
         for i, p in enumerate(res["passages"], 1):
             flag = " *id-match*" if p.get("boosted") else ""
-            print(f"[{i}] score={p['score']}{flag} {p['cite']}")
+            print(f"[{i}] dense={p['score']} bm25={p.get('bm25', 0)}{flag} {p['cite']}")
             print("    " + p["text"][:300].replace("\n", " ") + ("…" if len(p["text"]) > 300 else ""))
         print()
     if not args.no_llm:

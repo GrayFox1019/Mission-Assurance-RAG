@@ -62,8 +62,9 @@ def source_matches(expected: str, cite: str) -> bool:
 
 def score(q: dict, res: dict) -> dict:
     answer = res["answer"]
-    refused = answer.strip().startswith(REFUSAL)
-    partial = (not refused) and (REFUSAL in answer)     # answered some, declared the rest not found
+    head = answer.strip().lstrip("*#_ ").lower()
+    refused = head.startswith(REFUSAL.lower().rstrip("."))
+    partial = (not refused) and bool(re.search(r"not found in corpus", answer, re.I))  # answered some, declared the rest not found
     cited = res["cited"]
 
     if q["should_refuse"]:
@@ -93,6 +94,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--k", type=int, default=TOP_K)
     ap.add_argument("--no-id-boost", action="store_true")
+    ap.add_argument("--no-bm25", action="store_true")
     ap.add_argument("--ids", type=str, default="", help="comma-separated question ids")
     ap.add_argument("--label", type=str, default="baseline")
     ap.add_argument("--questions", type=str, default="eval_questions.json")
@@ -111,13 +113,15 @@ def main() -> None:
         questions = [q for q in questions if q["id"] in by_id]
         args.k = saved["meta"]["k"]
         id_boost = saved["meta"]["id_boost"]
+        bm25 = saved["meta"].get("bm25", False)
         backend = saved["meta"]["backend"]
         args.label = saved["meta"]["label"] + "_rescored"
     else:
         store = Store()
         id_boost = not args.no_id_boost
+        bm25 = not args.no_bm25
         backend = store.backend()
-    print(f"Eval: {len(questions)} questions | k={args.k} | id_boost={id_boost} | backend={backend} | model={os.getenv('ANTHROPIC_MODEL')}\n")
+    print(f"Eval: {len(questions)} questions | k={args.k} | id_boost={id_boost} | bm25={bm25} | backend={backend} | model={os.getenv('ANTHROPIC_MODEL')}\n")
 
     rows = []
     t0 = time.time()
@@ -127,7 +131,7 @@ def main() -> None:
             res = {"answer": r0["answer"], "cited": r0["cited"],
                    "passages": [{"cite": c} for c in r0["retrieved"]]}
         else:
-            res = answer_question(q["question"], store, k=args.k, id_boost=id_boost)
+            res = answer_question(q["question"], store, k=args.k, id_boost=id_boost, bm25=bm25)
         s = score(q, res)
         rows.append({**q, **s, "answer": res["answer"], "cited": res["cited"],
                      "retrieved": [p["cite"] for p in res["passages"]]})
@@ -157,14 +161,14 @@ def main() -> None:
 
     stamp = datetime.now().strftime("%Y%m%d_%H%M")
     out = RESULTS / f"eval_{args.label}_{stamp}"
-    meta = {"label": args.label, "k": args.k, "id_boost": id_boost, "model": os.getenv("ANTHROPIC_MODEL"),
+    meta = {"label": args.label, "k": args.k, "id_boost": id_boost, "bm25": bm25, "model": os.getenv("ANTHROPIC_MODEL"),
             "chunk_tokens": os.getenv("CHUNK_TOKENS", "800"), "backend": backend, "timestamp": stamp,
             "cited_correct": f"{cited_n}/{len(pos)}", "grounded": f"{grounded_n}/{len(pos)}",
             "refusal_correct": f"{refusal_n}/{len(neg)}"}
     out.with_suffix(".json").write_text(json.dumps({"meta": meta, "rows": rows}, indent=1, ensure_ascii=False), encoding="utf-8")
 
     md = [f"## Eval run: {args.label} ({stamp})", "",
-          f"k={args.k}, id_boost={id_boost}, chunk≈{meta['chunk_tokens']} tokens, model={meta['model']}", "",
+          f"k={args.k}, id_boost={id_boost}, bm25={bm25}, chunk≈{meta['chunk_tokens']} tokens, model={meta['model']}", "",
           "| # | Type | Cited | Grounded | Refusal | Note |", "|---|---|---|---|---|---|"]
     for r in rows:
         note = ""

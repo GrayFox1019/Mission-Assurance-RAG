@@ -1,0 +1,774 @@
+{
+ "meta": {
+  "label": "chunk800_k10_bm25_docname_mt2500",
+  "k": 10,
+  "id_boost": true,
+  "bm25": true,
+  "model": "claude-sonnet-5-5",
+  "chunk_tokens": "800",
+  "backend": "chroma+bm25",
+  "timestamp": "20261105_0941",
+  "cited_correct": "15/15",
+  "grounded": "11/15",
+  "refusal_correct": "5/5"
+ },
+ "rows": [
+  {
+   "id": 1,
+   "type": "factual",
+   "question": "What are the six steps of the Risk Management Framework?",
+   "expected_sources": [
+    "NIST SP 800-37 r2",
+    "DoDI 8510.01"
+   ],
+   "must_contain": [
+    "Prepare",
+    "Categorize",
+    "Select",
+    "Implement",
+    "Assess",
+    "Authorize",
+    "Monitor"
+   ],
+   "should_refuse": false,
+   "notes": "r2 has seven steps including Prepare; a correct answer notes this. DoDI 8510.01 §3.2 enumerates the same steps and is an acceptable source.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "The RMF has seven steps, not six: \"a preparatory step to ensure that organizations are ready to execute the process and six main steps\" [NIST SP 800-37 r2, pp. 26-28 (doctrine)].\n\nThe Fig. 15 labels in SP 800-82 r3 name the steps as Prepare, Categorize System, Select Controls, Implement Controls, Assess Controls, Authorize System, and Monitor Controls [NIST SP 800-82 r3, pp. 72-74 (doctrine)]. Taking Prepare as the preparatory step, the six main steps are:\n\n1. Categorize System\n2. Select Controls\n3. Implement Controls\n4. Assess Controls\n5. Authorize System\n6. Monitor Controls\n\nThe figure shows these sequentially, but they \"can be implemented in a different order to be consistent with established management and system development life cycle processes\" [NIST SP 800-82 r3, pp. 72-74 (doctrine)].\n\nSP 800-37 r2 describes Prepare as establishing \"a context and priorities for managing security and privacy risk.\" It describes Categorize as categorizing the system and its information \"based on an analysis of the impact of loss\" [NIST SP 800-37 r2, pp. 26-28 (doctrine)]. The supplied passage cuts off before describing the other steps, so their descriptions are not found in the corpus.",
+   "cited": [
+    "[NIST SP 800-82 r3, pp. 72-74 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 26-28 (doctrine)]"
+   ],
+   "retrieved": [
+    "[NIST SP 800-37 r2, pp. 29-30 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 30-31 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 72-74 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 33-34 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 10-11 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 13-14 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 26-28 (doctrine)]",
+    "[NIST SP 800-30 r1, p. 33 (doctrine)]",
+    "[FMA-C How-To Guide Step 4.3 (methodology)]",
+    "[NIST SP 800-82 r3, pp. 61-64 (doctrine)]"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "factual",
+   "question": "Under DoDI 8510.01, who is responsible for authorizing a DoD system to operate?",
+   "expected_sources": [
+    "DoDI 8510.01"
+   ],
+   "must_contain": [
+    "Authorizing Official"
+   ],
+   "should_refuse": false,
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "The authorizing official (AO) is responsible for authorizing a DoD system to operate. DoD systems \"must receive and maintain a valid authorization before beginning operations.\" [DoDI 8510.01, pp. 11-13 (doctrine)]\n\n- **Appointment:** DoD Component heads must \"Appoint an AO for every system operating within or on behalf of the Component\" and authorize systems in accordance with the issuance. [DoDI 8510.01, pp. 7-9 (doctrine)] Table 8 says AOs are appointed by the DoD Component head, or by the PAO for MA-managed information systems. [DoDI 8510.01, pp. 29-32 (doctrine)]\n- **Qualifications:** AOs must be government personnel, and this cannot be re-delegated to personnel who do not meet that requirement. They must have relevant expertise with the leveraged technology and must complete AO training or a NIST RMF training course. [DoDI 8510.01, pp. 9-11 (doctrine)]\n- **Non-delegation:** AOs \"Do not delegate authorization decisions.\" Other AO responsibilities and tasks may be delegated to formally appointed and qualified AODRs. [DoDI 8510.01, pp. 26-28 (doctrine)]\n- **Component CIO review:** Before ATOs are issued for Component systems with a risk level of \"Very High\" or \"High,\" the DoD Component CIO reviews and documents concurrence or non-concurrence. [DoDI 8510.01, pp. 26-28 (doctrine)]\n- **Revocation:** The AO may downgrade or revoke an authorization decision at any time. [DoDI 8510.01, pp. 26-28 (doctrine)]\n- **Specific system types:** The Commander, USSTRATCOM serves as the AO for nuclear command, control, and communication systems. [DoDI 8510.01, pp. 9-11 (doctrine)] The Commander, USSPACECOM assigns AOs for space systems. [DoDI 8510.01, pp. 9-11 (doctrine)]",
+   "cited": [
+    "[DoDI 8510.01, pp. 9-11 (doctrine)]",
+    "[DoDI 8510.01, pp. 29-32 (doctrine)]",
+    "[DoDI 8510.01, pp. 7-9 (doctrine)]",
+    "[DoDI 8510.01, pp. 11-13 (doctrine)]",
+    "[DoDI 8510.01, pp. 26-28 (doctrine)]"
+   ],
+   "retrieved": [
+    "[DoDI 8510.01, pp. 6-8 (doctrine)]",
+    "[DoDI 8510.01, pp. 9-11 (doctrine)]",
+    "[DoDI 8510.01, pp. 29-32 (doctrine)]",
+    "[DoDI 8510.01, pp. 7-9 (doctrine)]",
+    "[DoDI 8510.01, pp. 11-13 (doctrine)]",
+    "[DoDI 8510.01, pp. 32-35 (doctrine)]",
+    "[DoDI 8510.01, pp. 26-28 (doctrine)]",
+    "[DoDI 8510.01, pp. 21-24 (doctrine)]",
+    "[DoDI 8510.01, pp. 1-4 (doctrine)]",
+    "[DoDI 8510.01, pp. 24-26 (doctrine)]"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "factual",
+   "question": "How does DoDD 3020.40 define \"Mission Assurance\"?",
+   "expected_sources": [
+    "DoDD 3020.40"
+   ],
+   "must_contain": [
+    "continued function",
+    "resilience"
+   ],
+   "should_refuse": false,
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "DoDD 3020.40 defines MA in its glossary as \"A process to protect or ensure the continued function and resilience of capabilities and assets, including personnel, equipment, facilities, networks, information and information systems, infrastructure, and supply chains, critical to the execution of DoD mission-essential functions in any operating environment or condition.\" [DoDD 3020.40, pp. 17-19 (doctrine)]\n\nThe policy section describes it in similar terms: DoD uses MA as a process to protect or ensure the continued function and resilience of capabilities and assets \"by refining, integrating, and synchronizing the aspects of the DoD security, protection, and risk-management programs that directly relate to mission execution.\" [DoDD 3020.40, pp. 3-5 (doctrine)]",
+   "cited": [
+    "[DoDD 3020.40, pp. 17-19 (doctrine)]",
+    "[DoDD 3020.40, pp. 3-5 (doctrine)]"
+   ],
+   "retrieved": [
+    "[DoDD 3020.40, pp. 1-3 (doctrine)]",
+    "[DoDD 3020.40, pp. 20-21 (doctrine)]",
+    "[DoDD 3020.40, pp. 19-21 (doctrine)]",
+    "[DoDD 3020.40, pp. 17-19 (doctrine)]",
+    "[DoDD 3020.40, pp. 11-12 (doctrine)]",
+    "[DoDD 3020.40, pp. 15-18 (doctrine)]",
+    "[DoDD 3020.40, pp. 3-5 (doctrine)]",
+    "[DoDD 3020.40, pp. 9-11 (doctrine)]",
+    "[DoDD 3020.40, pp. 8-9 (doctrine)]",
+    "[DoDD 3020.40, pp. 6-8 (doctrine)]"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "factual",
+   "question": "What does NIST SP 800-30 define as the components of risk?",
+   "expected_sources": [
+    "NIST SP 800-30 r1"
+   ],
+   "must_contain": [
+    "threat",
+    "vulnerability",
+    "likelihood",
+    "impact"
+   ],
+   "should_refuse": false,
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "NIST SP 800-30 doesn't use the phrase \"components of risk.\" It does define risk in terms of two elements and a set of risk factors.\n\n**Core definition.** Risk is \"a measure of the extent to which an entity is threatened by a potential circumstance or event, and typically a function of: (i) the adverse impacts that would arise if the circumstance or event occurs; and (ii) the likelihood of occurrence.\" [NIST SP 800-30 r1, pp. 58-60 (doctrine)] The risk determination is likewise \"typically a function of the degree of harm and likelihood of harm occurring.\" [NIST SP 800-30 r1, pp. 10-11 (doctrine)]\n\n**Risk factors.** Risk factors are characteristics used in a risk model as inputs to determining levels of risk. The typical ones are threat, vulnerability, impact, likelihood, and predisposing condition. [NIST SP 800-30 r1, pp. 15-17 (doctrine)]\n\n**Decomposition.**\n- Risk factors can be broken into more detailed characteristics. For example, threats decompose into threat sources and threat events. [NIST SP 800-30 r1, pp. 17-18 (doctrine)]\n- Likelihood combines the likelihood that a threat event is initiated with the likelihood that it results in adverse impacts. [NIST SP 800-30 r1, pp. 18-19 (doctrine)]\n- For adversarial threats, likelihood is typically based on adversary intent, capability, and targeting. [NIST SP 800-30 r1, pp. 18-19 (doctrine)]\n- A predisposing condition affects (increases or decreases) the likelihood that threat events, once initiated, result in adverse impacts. [NIST SP 800-30 r1, pp. 18-19 (doctrine)]",
+   "cited": [
+    "[NIST SP 800-30 r1, pp. 10-11 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 15-17 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 58-60 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 18-19 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 17-18 (doctrine)]"
+   ],
+   "retrieved": [
+    "[NIST SP 800-30 r1, pp. 10-11 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 21-22 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 15-17 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 58-60 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 25-27 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 90-92 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 18-19 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 17-18 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 8-10 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 12-14 (doctrine)]"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "factual",
+   "question": "What are the three sources every FMA-C workbook entry must trace back to?",
+   "expected_sources": [
+    "FMA-C How-To Guide §1.3"
+   ],
+   "must_contain": [
+    "brief",
+    "data sheet",
+    "architecture diagram"
+   ],
+   "should_refuse": false,
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "Every FMA-C workbook entry traces back to exactly one of three sources. If you cannot point to the source for a cell, the cell is wrong. [FMA-C How-To Guide §1.3 (methodology)]\n\n1. **The Commander / Exercise brief.** It provides the Mission Statement, Commander's Intent, Mission Essential Function (MEF) / Mission Essential Tasks (METs), Time-Critical Actions (TCAs), Unacceptable Losses, and Mission Hazards. This is the \"why\" and the \"what must not happen.\" [FMA-C How-To Guide §1.3 (methodology)]\n2. **The aircraft / weapons-system Data Sheet.** It provides the technical inventory of the airframe's mission systems: data buses, mission processors, controllers, update paths, and support equipment. This is the \"how\" of the aircraft. [FMA-C How-To Guide §1.3 (methodology)]\n3. **The System Architecture Diagram.** It provides the picture of components and their connections, giving a visual to point at when telling the story and making the Data Sheet's text easier to reason about. [FMA-C How-To Guide §1.3 (methodology)]\n\nFor the notional CF-189 exercise, these are the FMA-C Exercise (CF-189).docx, the CF-189 Data Sheet.docx, and the CF-189 Diagram.pptx. [FMA-C How-To Guide §1.3 (methodology)]\n\nIf the Commander brief and the Data Sheet conflict, the brief wins for mission topics and the Data Sheet wins for airframe topics. [FMA-C How-To Guide Part 4 (methodology)]",
+   "cited": [
+    "[FMA-C How-To Guide §1.3 (methodology)]",
+    "[FMA-C How-To Guide Part 4 (methodology)]"
+   ],
+   "retrieved": [
+    "[FMA-C How-To Guide §1.3 (methodology)]",
+    "[FMA-C How-To Guide §1.5 (methodology)]",
+    "[FMA-C How-To Guide Part 1 (methodology)]",
+    "[FMA-C How-To Guide Part 4 (methodology)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Appendix D (methodology)]",
+    "[FMA-C How-To Guide Part 2 (methodology)]",
+    "[FMA-C How-To Guide Part 3 (methodology)]",
+    "[FMA-C How-To Guide §3.3 (methodology)]",
+    "[FMA-C How-To Guide Step 4.2 (methodology)]"
+   ]
+  },
+  {
+   "id": 6,
+   "type": "factual",
+   "question": "What are the four bins in a Step 5 hazardous control action analysis?",
+   "expected_sources": [
+    "FMA-C How-To Guide Step 5",
+    "STPA Handbook"
+   ],
+   "must_contain": [
+    "not provided",
+    "not required",
+    "wrong time",
+    "too soon"
+   ],
+   "should_refuse": false,
+   "notes": "Guide wording: Not Provided When Required / Provided When Not Required / Wrong Time or Order / Applied Too Long or Stopped Too Soon. Report uses Applied when unsafe / Not applied / Early-Late / Short-Long; either set is acceptable.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "The Step 5 four-bin analysis asks, for each control action, how it could fail:\n\n1. **Bin 1, \"Not Provided When Required\":** the control action fails to happen when it should have. [FMA-C How-To Guide Step 5 (methodology)]\n2. **Bin 2, \"Provided When Not Required\":** the control action fires when it shouldn't have. [FMA-C How-To Guide Step 5 (methodology)]\n3. **Bin 3, \"Provided at the Wrong Time or in Wrong Order\":** the control action fires too early, too late, or out of sequence. [FMA-C How-To Guide Step 5 (methodology)]\n4. **Bin 4, \"Applied Too Long or Stopped Too Soon\":** the control action runs for the wrong duration. [FMA-C How-To Guide Step 5 (methodology)]\n\nFor each bin, you map the failure to the commander-defined Hazards. [FMA-C How-To Guide Step 5 (methodology)]\n\nThe notional F/A-13 Peacemaker report words the bins differently: \"Applied when unsafe,\" \"Not Applied when needed,\" \"Applied Early (E) / Late (L),\" and \"Applied Short (S) / Long (A).\" [F/A-13 Peacemaker FMA-C Report §5.2 (worked_example)]",
+   "cited": [
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.2 (worked_example)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.2 (worked_example)]"
+   ],
+   "retrieved": [
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Step 4.2 (methodology)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[F/A-13 Peacemaker FMA-C Report §4.4 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.2 (worked_example)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Step 4.3 (methodology)]",
+    "[FMA-C How-To Guide Appendix D (methodology)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.2 (worked_example)]"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "factual",
+   "question": "What is MITRE ATT&CK technique T1190, and which tactic does it fall under?",
+   "expected_sources": [
+    "MITRE ATT&CK"
+   ],
+   "must_contain": [
+    "Exploit Public-Facing Application",
+    "Initial Access"
+   ],
+   "should_refuse": false,
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "T1190 is \"Exploit Public-Facing Application,\" and it falls under the Initial Access tactic. [MITRE ATT&CK T1190 Exploit Public-Facing Application (threat_data)]\n\nThe passage describes it as adversaries attempting \"to exploit a weakness in an Internet-facing host or system to initially access a network.\" The weakness can be a software bug, a temporary glitch, or a misconfiguration. [MITRE ATT&CK T1190 Exploit Public-Facing Application (threat_data)]\n\nTargets are often websites/web servers. They can also be databases, standard services (like SMB or SSH), network device administration and management protocols (like SNMP and Smart Install), and any other system with Internet-accessible open sockets. [MITRE ATT&CK T1190 Exploit Public-Facing Application (threat_data)]\n\nIt is not a sub-technique. [MITRE ATT&CK T1190 Exploit Public-Facing Application (threat_data)]",
+   "cited": [
+    "[MITRE ATT&CK T1190 Exploit Public-Facing Application (threat_data)]"
+   ],
+   "retrieved": [
+    "[MITRE ATT&CK T1190 Exploit Public-Facing Application (threat_data)]",
+    "[MITRE ATT&CK T1595 Active Scanning (threat_data)]",
+    "[MITRE ATT&CK T1595.002 Vulnerability Scanning (threat_data)]",
+    "[MITRE ATT&CK T1596.005 Scan Databases (threat_data)]",
+    "[MITRE ATT&CK T1592.003 Firmware (threat_data)]",
+    "[MITRE ATT&CK T1020 Automated Exfiltration (threat_data)]",
+    "[MITRE ATT&CK T1008 Fallback Channels (threat_data)]",
+    "[STPA Handbook, pp. 19-20 (doctrine)]",
+    "[MITRE ATT&CK T1029 Scheduled Transfer (threat_data)]",
+    "[FMA-C How-To Guide Step 4.1 (methodology)]"
+   ]
+  },
+  {
+   "id": 8,
+   "type": "factual",
+   "question": "What does NIST SP 800-53 r5 control SC-7 (Boundary Protection) require?",
+   "expected_sources": [
+    "NIST SP 800-53 r5"
+   ],
+   "must_contain_any": [
+    "external",
+    "managed interface",
+    "monitor",
+    "boundary"
+   ],
+   "must_contain_min": 2,
+   "should_refuse": false,
+   "notes": "Rewritten from 'what does the SC family cover' — 800-53 r5 has no family-scope prose (r4 did), so the original was unanswerable from the corpus.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "The passages contain only part of the base SC-7 requirement. Items a and b of the base control text are not in the corpus, because the passage starts mid-control.\n\n**Base control (item c only):** \"Connect to external networks or systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.\" [NIST SP 800-53 r5, pp. 324-325 (doctrine)]\n\nManaged interfaces include gateways, routers, firewalls, guards, network-based malicious code analysis, virtualization systems, or encrypted tunnels. [NIST SP 800-53 r5, pp. 324-325 (doctrine)] Subnetworks that are physically or logically separated from internal networks are called demilitarized zones (DMZs). [NIST SP 800-53 r5, pp. 324-325 (doctrine)]\n\nThe glossary defines boundary protection as \"Monitoring and control of communications at the external interface to a system to prevent and detect malicious and other unauthorized communications using boundary protection devices.\" [NIST SP 800-53 r5, pp. 423-425 (doctrine)]\n\n**Enhancements in the passages:**\n- (3) Access points: limit the number of external network connections to the system. [NIST SP 800-53 r5, pp. 324-325 (doctrine)]\n- (4) External telecommunications services: implement a managed interface and a traffic flow policy for each service. Protect confidentiality and integrity across each interface. Document and periodically review exceptions. Prevent unauthorized exchange of control plane traffic, publish information so remote networks can detect it, and filter unauthorized control plane traffic from external networks. [NIST SP 800-53 r5, pp. 324-325 (doctrine)]\n- (5) Deny by default, allow by exception: deny network communications traffic by default and allow it by exception. [NIST SP 800-53 r5, pp. 325-326 (doctrine)]\n- (7) Split tunneling: prevent it for remote devices unless the split tunnel is securely provisioned using organization-defined safeguards. [NIST SP 800-53 r5, pp. 325-326 (doctrine)]\n- (8) Authenticated proxy servers: route organization-defined internal traffic to organization-defined external networks through authenticated proxy servers at managed interfaces. [NIST SP 800-53 r5, pp. 325-326 (doctrine)]\n- (12) Host-based protection: implement host-based boundary protection mechanisms at organization-defined components. [NIST SP 800-53 r5, pp. 327-329 (doctrine)]\n- (13) Isolate security tools, mechanisms, and support components using physically separate subnetworks with managed interfaces. [NIST SP 800-53 r5, pp. 327-329 (doctrine)]\n- (14) Protect against unauthorized physical connections at organization-defined managed interfaces. [NIST SP 800-53 r5, pp. 327-329 (doctrine)]\n- (15) Route networked privileged accesses through a dedicated, managed interface for access control and auditing. [NIST SP 800-53 r5, pp. 327-329 (doctrine)]\n- (16) Prevent discovery of specific system components that represent a managed interface. [NIST SP 800-53 r5, pp. 327-329 (doctrine)]\n- (17) Enforce adherence to protocol formats. [NIST SP 800-53 r5, pp. 328-330 (doctrine)]\n- (18) Fail secure: prevent systems from entering unsecure states if a boundary protection device fails operationally. [NIST SP 800-53 r5, pp. 328-330 (doctrine)]\n- (19) Block inbound and outbound traffic between organization-defined communication clients that end users and external service providers configure independently. [NIST SP 800-53 r5, pp. 328-330 (doctrine)]\n- (20) Provide the capability to dynamically isolate organization-defined system components. [NIST SP 800-53 r5, pp. 328-330 (doctrine)]\n- (21) Isolate organization-defined system components that support organization-defined missions or business functions, using boundary protection mechanisms. [NIST SP 800-53 r5, pp. 328-330 (doctrine)]\n- (22) Implement separate network addresses to connect to systems in different security domains. [NIST SP 800-53 r5, pp. 330-331 (doctrine)]\n- (23) Disable feedback to senders on protocol format validation failure. [NIST SP 800-53 r5, pp. 330-331 (doctrine)]\n- (24) For systems processing personally identifiable information, apply processing rules, monitor for permitted processing at external interfaces and key internal boundaries, document exceptions, and review and remove exceptions that are no longer supported. [NIST SP 800-53 r5, pp. 330-331 (doctrine)]\n- (25)–(27) Prohibit direct connection of an unclassified national security system, a classified national security system, or an unclassified non-national security system to an external network without an organization-defined boundary protection device. The classified case has no organization-defined system selection. [NIST SP 800-53 r5, pp. 330-331 (doctrine)]\n- (28) Prohibit direct connection of an organization-defined system to a public network. [NIST SP 800-53 r5, pp. 330-331 (doctrine)]\n\nEnhancements (1), (2), and (6) are withdrawn and incorporated elsewhere. [NIST SP 800-53 r5, pp. 324-325 (doctrine)] [NIST",
+   "cited": [
+    "[NIST SP 800-53 r5, pp. 325-326 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 324-325 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 423-425 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 330-331 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 327-329 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 328-330 (doctrine)]"
+   ],
+   "retrieved": [
+    "[NIST SP 800-53 r5, pp. 325-326 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 319-321 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 341-343 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 324-325 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 356-357 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 301-303 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 423-425 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 330-331 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 327-329 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 328-330 (doctrine)]"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "cross_document",
+   "question": "Which NIST SP 800-53 control families does SP 800-82 single out as needing OT-specific tailoring?",
+   "expected_sources": [
+    "NIST SP 800-82 r3",
+    "NIST SP 800-53 r5"
+   ],
+   "must_contain_any": [
+    "AC",
+    "IA",
+    "SC",
+    "SI",
+    "Access Control",
+    "Identification and Authentication",
+    "System and Communications Protection",
+    "System and Information Integrity"
+   ],
+   "must_contain_min": 2,
+   "should_refuse": false,
+   "cited_correct": true,
+   "grounded": false,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": true,
+   "answer": "The passages don't give a complete list of families, but they show three that carry an explicit \"Tailoring Considerations\" section.\n\n- **Access Control (AC):** Before implementing these controls, organizations should weigh trade-offs among security, privacy, latency, performance, throughput, and reliability. If the OT can't support a requirement, compensating controls apply. [NIST SP 800-82 r3, pp. 242-245 (doctrine)]\n- **Audit and Accountability (AU):** \"Security audit information and audit tools are not available on legacy OT\" in general. Where OT can't meet a control, organizations use compensating controls, such as audit information from the historian, firewall logs, or physical security systems. [NIST SP 800-82 r3, pp. 252-255 (doctrine)]\n- **Configuration Management (CM):** If the OT can't restrict unnecessary functions or support automated configuration management, organizations use nonautomated mechanisms or procedures as compensating controls. [NIST SP 800-82 r3, pp. 260-262 (doctrine)]\n\nSeparately, controls for communication, devices, and interfaces generally need tailoring when devices use protocols without network addressing, such as RS-232 serial. The passage describes these by function rather than by family name. [NIST SP 800-82 r3, pp. 240-242 (doctrine)]\n\nNot found in corpus: whether SP 800-82 gives tailoring considerations for any other families. The supplied passages don't show them.",
+   "cited": [
+    "[NIST SP 800-82 r3, pp. 240-242 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 242-245 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 260-262 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 252-255 (doctrine)]"
+   ],
+   "retrieved": [
+    "[NIST SP 800-82 r3, pp. 240-242 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 314-316 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 43-45 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 241-243 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 242-245 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 35-37 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 260-262 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 252-255 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 115-117 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 71-72 (doctrine)]"
+   ]
+  },
+  {
+   "id": 10,
+   "type": "cross_document",
+   "question": "How does the RMF in DoDI 8510.01 relate to the NIST SP 800-37 process?",
+   "expected_sources": [
+    "DoDI 8510.01",
+    "NIST SP 800-37 r2"
+   ],
+   "must_contain_any": [
+    "implements",
+    "adopts",
+    "based on"
+   ],
+   "must_contain_min": 1,
+   "should_refuse": false,
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "DoDI 8510.01 adopts the NIST process and adds DoD-specific requirements on top of it.\n\n- **Adoption:** \"The RMF process adopts the NIST RMF in accordance with NIST SP 800-37 to comply with FISMA requirements.\" [DoDI 8510.01, pp. 11-13 (doctrine)]\n- **Steps:** Chapter 3 of NIST SP 800-37 \"details the steps of the RMF,\" with additional guidance on the RMF KS. [DoDI 8510.01, pp. 11-13 (doctrine)] DoDI 8510.01 lists the same steps: Prepare, Categorize, Select, Implement, Assess, Authorize, and Monitor. [DoDI 8510.01, pp. 1-4 (doctrine)] NIST SP 800-37 lists the same seven steps in its Chapter Three. [NIST SP 800-37 r2, pp. 16-19 (doctrine)]\n- **Other references:** The DoD RMF process is also in accordance with NIST SP 800-30, 800-39, 800-53A, and 800-137, CNSSP 22, CNSSI 1253 and 1254, DoDD 8000.01, and DoDI 8500.01. [DoDI 8510.01, pp. 11-13 (doctrine)]\n- **Prepare step:** JCA CPMs may develop Level 2 prepare step guidance for systems in their area \"in accordance with NIST SP 800-37.\" [DoDI 8510.01, pp. 24-26 (doctrine)]\n- **DoD additions:** DoD Component heads categorize systems and select controls per CNSSI 1253 and implement controls per NIST SP 800-53. They must also use the DoD-specific assignment values, overlays, implementation guidance, and assessment procedures on the RMF KS. [DoDI 8510.01, pp. 7-9 (doctrine)] The RMF KS is the \"authoritative source for standardized implementation of RMF.\" [DoDI 8510.01, pp. 29-32 (doctrine)]\n- **From the NIST side:** NIST SP 800-53 states that DoDI 8510.01 \"provides guidance for the Department of Defense.\" [NIST SP 800-53 r5, pp. 29-31 (doctrine)]",
+   "cited": [
+    "[DoDI 8510.01, pp. 24-26 (doctrine)]",
+    "[DoDI 8510.01, pp. 11-13 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 29-31 (doctrine)]",
+    "[DoDI 8510.01, pp. 29-32 (doctrine)]",
+    "[DoDI 8510.01, pp. 1-4 (doctrine)]",
+    "[DoDI 8510.01, pp. 7-9 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 16-19 (doctrine)]"
+   ],
+   "retrieved": [
+    "[DoDI 8510.01, pp. 24-26 (doctrine)]",
+    "[DoDI 8510.01, pp. 32-35 (doctrine)]",
+    "[DoDI 8510.01, pp. 11-13 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 29-31 (doctrine)]",
+    "[DoDI 8510.01, pp. 35-36 (doctrine)]",
+    "[DoDI 8510.01, pp. 29-32 (doctrine)]",
+    "[DoDI 8510.01, pp. 1-4 (doctrine)]",
+    "[DoDI 8510.01, pp. 7-9 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 42-44 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 16-19 (doctrine)]"
+   ]
+  },
+  {
+   "id": 11,
+   "type": "cross_document",
+   "question": "The F/A-13 Peacemaker report scores risk as Likelihood x Impact. How does NIST SP 800-30 define likelihood and impact, and what scale and bands does the report use?",
+   "expected_sources": [
+    "NIST SP 800-30 r1",
+    "F/A-13 Peacemaker FMA-C Report §5.4"
+   ],
+   "must_contain": [
+    "likelihood",
+    "impact",
+    "Critical"
+   ],
+   "should_refuse": false,
+   "notes": "Replaced original Q11 (FMA-C vs RMF): the How-To Guide does not state the relationship, so the corpus could not answer it. Expect 1-5 scales, Score = L x I, 20-25 Critical.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "**NIST SP 800-30 on likelihood**\n\n- Likelihood \"is not likelihood in the strict sense of the term; rather, it is a likelihood score.\" Assessors assign it from evidence, experience, and expert judgment. [NIST SP 800-30 r1, pp. 81-82 (doctrine)]\n- Organizations typically determine overall likelihood in three steps. They assess the likelihood of initiation (adversarial) or occurrence (non-adversarial), then the likelihood that the event results in adverse impacts, and finally combine the two. [NIST SP 800-30 r1, pp. 19-20 (doctrine)]\n- The likelihood of impact is \"the probability (or possibility) that the threat event will result in an adverse impact, regardless of the magnitude of harm.\" [NIST SP 800-30 r1, pp. 19-20 (doctrine)]\n\n**NIST SP 800-30 on impact**\n\n- The level of impact is \"the magnitude of harm that can be expected to result from the consequences of unauthorized disclosure of information, unauthorized modification of information, unauthorized destruction of information, or loss of information or information system availability.\" [NIST SP 800-30 r1, pp. 19-20 (doctrine)]\n\n**Scale and bands in the F/A-13 report**\n\n- The report uses the AFPAM 63-128 semi-qualitative L × I model. L and I are each scored 1-5, and Score = L × I. [F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]\n- The bands are 1-6 Low, 7-12 Medium, 13-19 High, and 20-25 Critical. [F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]\n- Three KT-C risks (R-01, R-02, R-05) score 15 (High), and two (R-03, R-04) score 20 (Critical). [F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]\n\n**How the two differ**\n\n- NIST's example scales use five qualitative levels, Very Low through Very High, with semi-quantitative values of 0, 2, 5, 8, and 10. [NIST SP 800-30 r1, pp. 82-83 (doctrine)]\n- NIST combines likelihood and impact through a lookup table rather than a multiplication. [NIST SP 800-30 r1, pp. 86-88 (doctrine)]\n- The corpus does not say how AFPAM 63-128 relates to NIST's scales.",
+   "cited": [
+    "[NIST SP 800-30 r1, pp. 82-83 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 81-82 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 19-20 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 86-88 (doctrine)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]"
+   ],
+   "retrieved": [
+    "[NIST SP 800-30 r1, pp. 82-83 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 15-17 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 94-95 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 81-82 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 89-90 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 19-20 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 86-88 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 43-44 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 90-92 (doctrine)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]"
+   ]
+  },
+  {
+   "id": 12,
+   "type": "cross_document",
+   "question": "Which NIST SP 800-30 concept corresponds most closely to an FMA-C Unacceptable Loss, and where do they differ?",
+   "expected_sources": [
+    "NIST SP 800-30 r1",
+    "FMA-C How-To Guide Step 2"
+   ],
+   "must_contain": [
+    "impact",
+    "commander"
+   ],
+   "should_refuse": false,
+   "notes": "UL is commander-defined and mission-level, not system-level.",
+   "cited_correct": true,
+   "grounded": false,
+   "refusal_correct": null,
+   "refused": true,
+   "partial": false,
+   "answer": "**Not found in corpus** as a stated mapping. No passage says which SP 800-30 concept corresponds to an Unacceptable Loss. The corpus does cover both sides separately, and the closest candidate from the passages is \"adverse impact\" (an inference, not a stated equivalence).\n\n**FMA-C side.** Unacceptable Losses are \"the outcomes the commander cannot accept,\" stated at the mission level rather than the technical level. [FMA-C How-To Guide Step 2 (methodology)] They are \"not risks and… not causes. They are outcomes.\" [FMA-C How-To Guide Step 2 (methodology)] The commander provides them verbatim, and the analyst must not invent or soften them. [FMA-C How-To Guide Step 2 (methodology)] They are numbered for reference, not priority. [FMA-C How-To Guide Step 2 (methodology)] In the F/A-13 example, they include Loss of Life and Loss of an Aircraft. [F/A-13 Peacemaker FMA-C Report §2 (worked_example)]\n\n**SP 800-30 side.** Risk is \"typically a function of: (i) the adverse impacts that would arise if the circumstance or event occurs; and (ii) the likelihood of occurrence.\" [NIST SP 800-30 r1, pp. 58-60 (doctrine)] The impact appendix covers \"adverse impacts to organizational operations and assets, individuals, other organizations, or the Nation.\" [NIST SP 800-30 r1, pp. 82-83 (doctrine)]\n\n**Where they differ, as the passages show:**\n- **Risk vs. outcome.** An SP 800-30 impact is one input to a risk (alongside likelihood), while an FMA-C Loss is explicitly \"not a risk.\" [NIST SP 800-30 r1, pp. 58-60 (doctrine)] [FMA-C How-To Guide Step 2 (methodology)]\n- **Source.** A Loss is commander-provided and pasted verbatim. [FMA-C How-To Guide Step 2 (methodology)] SP 800-30 offers impact examples and scales that organizations tailor. [NIST SP 800-30 r1, pp. 82-83 (doctrine)]\n- **Scoring.** The Step 3 link from Hazard to Loss is a Yes/No answer, \"not a fuzzy scale.\" [FMA-C How-To Guide Step 2 (methodology)] SP 800-30 uses graded levels, such as Very Low to Very High for likelihood. [NIST SP 800-30 r1, pp. 82-83 (doctrine)] The CF-189 exercise also excludes threat, vulnerability, and risk scoring. [FMA-C How-To Guide §1.5 (methodology)]\n\n**Not found in corpus:** any passage that explicitly equates a Loss with an SP 800-30 impact, or compares the two.",
+   "cited": [
+    "[NIST SP 800-30 r1, pp. 58-60 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 82-83 (doctrine)]",
+    "[FMA-C How-To Guide Step 2 (methodology)]",
+    "[F/A-13 Peacemaker FMA-C Report §2 (worked_example)]",
+    "[FMA-C How-To Guide §1.5 (methodology)]"
+   ],
+   "retrieved": [
+    "[NIST SP 800-30 r1, pp. 58-60 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 67-69 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 18-19 (doctrine)]",
+    "[NIST SP 800-30 r1, pp. 82-83 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 66-67 (doctrine)]",
+    "[FMA-C How-To Guide Step 2 (methodology)]",
+    "[FMA-C How-To Guide Part 4 (methodology)]",
+    "[F/A-13 Peacemaker FMA-C Report §2 (worked_example)]",
+    "[FMA-C How-To Guide §1.5 (methodology)]",
+    "[FMAC Tables for F/A-13 — Step 2 & 3 row UL-4 (worked_example)]"
+   ]
+  },
+  {
+   "id": 13,
+   "type": "cross_document_structured",
+   "question": "For risk register entry R-05 in the F/A-13 assessment, which hazardous control action does it reference, and which Unacceptable Loss does that HCA trace to?",
+   "expected_sources": [
+    "F/A-13 Risk Assessment — Risk Register",
+    "F/A-13 Peacemaker FMA-C Report §5.2",
+    "F/A-13 Peacemaker FMA-C Report §3.2"
+   ],
+   "must_contain": [
+    "CA19",
+    "H4",
+    "UL-3"
+   ],
+   "should_refuse": false,
+   "notes": "Three-hop: Register row (FMA-C HCA Reference) -> §5.2 HCA table (CA19 -> H4) -> §3.2 crosswalk (H4 -> UL-3). Partial credit: CA19 + UL-3 without H4.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": false,
+   "answer": "R-05 (KT-C 7, GCS in Autonomous mode) references two HCAs. [F/A-13 Risk Assessment — Risk Register row R-05 (worked_example)]\n- **CA19** (GCS_MAM_Any, IssueOverride): applied when unsafe, and not applied when needed.\n- **CA8** (MPS_GCS_MissionPlan, PushMDLAutonomous): applied when unsafe.\n\nAll of these enable hazard H4. [F/A-13 Risk Assessment — Risk Register row R-05 (worked_example)]\n\nThe row's Primary UL is **UL-1, UL-3, UL-5**. [F/A-13 Risk Assessment — Risk Register row R-05 (worked_example)] The register gives this at the risk level, not per HCA, so the corpus does not map CA19 or CA8 to an individual UL.\n\nScenario 5 covers the same three HCAs and lists the losses at stake as UL-1, UL-3, UL-4 and UL-5. [F/A-13 Peacemaker FMA-C Report Scenario 5 (worked_example)] UL-4 therefore appears in the scenario but not in the register's Primary UL.\n\nFor the UL names, another passage defines UL-1 as loss of life via bad targeting, UL-3 as loss of MAM control, UL-4 as sortie generation halted, and UL-5 as civilian infrastructure damage. [F/A-13 Scenario Slot #1 — KT-C 1 of Top 5 (worked_example)]",
+   "cited": [
+    "[F/A-13 Risk Assessment — Risk Register row R-05 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report Scenario 5 (worked_example)]"
+   ],
+   "retrieved": [
+    "[F/A-13 Risk Assessment — Risk Register row R-05 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report R-05 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report Scenario 5 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report Program-level (>90 days — Engineering Ch (worked_example)]",
+    "[F/A-13 Risk Assessment — Risk Register row R-04 (worked_example)]",
+    "[F/A-13 Risk Assessment — Risk Register row R-02 (worked_example)]",
+    "[FMAC Tables for F/A-13 — Step 6 row --- F/A-13 Scenario Slot #1 — KT-C 1 of Top 5 --- (worked_example)]",
+    "[F/A-13 Risk Assessment — Risk Register row R-01 (worked_example)]",
+    "[FMAC Tables for F/A-13 — Step 2 & 3 row H1 (worked_example)]"
+   ]
+  },
+  {
+   "id": 14,
+   "type": "cross_document",
+   "question": "Where does the FMA-C Step 5 four-bin analysis come from, and what does the STPA Handbook call the equivalent analysis?",
+   "expected_sources": [
+    "STPA Handbook",
+    "FMA-C How-To Guide Step 5"
+   ],
+   "must_contain": [
+    "Unsafe Control Action"
+   ],
+   "should_refuse": false,
+   "notes": "Should name STPA/Leveson and the four UCA types.",
+   "cited_correct": true,
+   "grounded": false,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": true,
+   "answer": "**Origin of the four-bin analysis:** The Mission Assurance Student Guide page 65 defines the four bins. [FMA-C How-To Guide Step 5 (methodology)] Course 8 (Risk Assessment) supplies the analytical mechanics, so you are \"essentially running a lightweight FMEA (Failure Mode and Effects Analysis) on each control action.\" [FMA-C How-To Guide Step 5 (methodology)]\n\nThe inputs come from earlier steps. Every control action from Step 4.4 gets one Step 5 row, and each bin failure maps to the commander-defined Hazards from Step 3. [FMA-C How-To Guide Step 5 (methodology)] The hazardous control actions analyzed in Step 5 derive from the control actions, which derive from the Step 4.3 arrows, which derive from the Step 4.2 responsibilities. [FMA-C How-To Guide Step 4.2 (methodology)]\n\n**STPA Handbook's name for the equivalent analysis:** Not found in corpus. The supplied STPA Handbook passage covers only defining the purpose of the analysis: identifying losses, identifying system-level hazards, identifying system-level safety constraints, and optionally refining hazards. [STPA Handbook, pp. 15-17 (doctrine)] It does not name an equivalent to the four-bin control-action analysis.",
+   "cited": [
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Step 4.2 (methodology)]",
+    "[STPA Handbook, pp. 15-17 (doctrine)]"
+   ],
+   "retrieved": [
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide §1.5 (methodology)]",
+    "[FMA-C How-To Guide Step 5 (methodology)]",
+    "[FMA-C How-To Guide Part 2 (methodology)]",
+    "[FMA-C How-To Guide Step 4.2 (methodology)]",
+    "[FMA-C How-To Guide §1.1 (methodology)]",
+    "[FMA-C How-To Guide Appendix C (methodology)]",
+    "[FMA-C How-To Guide §3.2 (methodology)]",
+    "[STPA Handbook, pp. 15-17 (doctrine)]"
+   ]
+  },
+  {
+   "id": 15,
+   "type": "cross_document",
+   "question": "Which ATT&CK technique describes supply-chain compromise, and which F/A-13 risk register entries describe that threat?",
+   "expected_sources": [
+    "MITRE ATT&CK",
+    "F/A-13 Peacemaker FMA-C Report §5.4"
+   ],
+   "must_contain": [
+    "T1195",
+    "R-03",
+    "R-04"
+   ],
+   "should_refuse": false,
+   "notes": "Technique ID must appear in a retrieved STIX chunk; also accept Risk Register xlsx as the worked_example source.",
+   "cited_correct": true,
+   "grounded": false,
+   "refusal_correct": null,
+   "refused": false,
+   "partial": true,
+   "answer": "**ATT&CK technique:** T1195.002, Compromise Software Supply Chain, is the supply-chain compromise technique in the corpus. It covers adversaries manipulating application software before the final consumer receives it, including source code, the update/distribution mechanism, or replacing compiled releases with a modified version. [MITRE ATT&CK T1195.002 Compromise Software Supply Chain (threat_data)]\n\n**F/A-13 risk register entries describing supply-chain threat:**\n\n- **R-01 (Security Gateway):** \"Adversary supply-chain or firmware compromise reaches the Security Gateway.\" Score 15, High. [F/A-13 Risk Assessment — Risk Register row R-01 (worked_example)]\n- **R-02 (Mission Autonomy Module):** AI-model poisoning or ROE-library tampering \"via the MSK bench or the vendor supply chain.\" Score 15, High. [F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]\n- **R-03 (DTC/DTU + Type-1 crypto chain):** \"MDL supply-chain compromise,\" including the physical DTC custody chain. Score 20, Critical. [F/A-13 Risk Assessment — Risk Register row R-03 (worked_example)]\n- **R-04 (Vendor direct-connect ports):** A compromised tool build, custody gap, substituted off-inventory tool, or insider loads malicious firmware directly to the AESA, EW Suite, or FADEC. Score 20, Critical. [F/A-13 Risk Assessment — Risk Register row R-04 (worked_example)] The Executive Summary attributes the two Critical scores (R-03 and R-04) primarily to \"adversary supply-chain opportunity.\" [F/A-13 Peacemaker FMA-C Report Executive Summary (worked_example)]\n\nR-05 (GCS in Autonomous mode) describes SATCOM/ATDL exploit and credential theft, not supply chain. [F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]\n\n**Not found in corpus:** any explicit mapping of these risk entries to T1195.002. The pairing above is my inference from the shared supply-chain theme.",
+   "cited": [
+    "[F/A-13 Risk Assessment — Risk Register row R-04 (worked_example)]",
+    "[F/A-13 Risk Assessment — Risk Register row R-01 (worked_example)]",
+    "[F/A-13 Risk Assessment — Risk Register row R-03 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report Executive Summary (worked_example)]",
+    "[MITRE ATT&CK T1195.002 Compromise Software Supply Chain (threat_data)]"
+   ],
+   "retrieved": [
+    "[F/A-13 Risk Assessment — Risk Register row R-04 (worked_example)]",
+    "[NIST SP 800-53 r5, pp. 391-392 (doctrine)]",
+    "[F/A-13 Risk Assessment — Risk Register row R-01 (worked_example)]",
+    "[NIST SP 800-37 r2, pp. 61-62 (doctrine)]",
+    "[F/A-13 Risk Assessment — Risk Register row R-03 (worked_example)]",
+    "[NIST SP 800-82 r3, pp. 113-114 (doctrine)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.4 (worked_example)]",
+    "[NIST SP 800-37 r2, pp. 127-129 (doctrine)]",
+    "[F/A-13 Peacemaker FMA-C Report Executive Summary (worked_example)]",
+    "[MITRE ATT&CK T1195.002 Compromise Software Supply Chain (threat_data)]"
+   ]
+  },
+  {
+   "id": 16,
+   "type": "negative",
+   "question": "Which NIST SP 800-53 controls does the F/A-13 Peacemaker report map to each of its five critical KT-C?",
+   "expected_sources": [],
+   "must_contain": [
+    "Not found in corpus"
+   ],
+   "should_refuse": true,
+   "notes": "Report never maps KT-C to 800-53 controls even though both docs are in corpus. README safety test: must not fabricate control IDs or relabel the report's mitigations as controls.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": true,
+   "refused": true,
+   "partial": false,
+   "answer": "Not found in corpus. The passages list the five critical KT-C (Security Gateway, Mission Autonomy Module, DTC/DTU + Type-1 crypto chain, vendor direct-connect ports, and Ground Control Station in autonomous mode) [F/A-13 Peacemaker FMA-C Report Executive Summary (worked_example)], but they contain no mapping of those nodes to NIST SP 800-53 controls.\n\nThe passages do show the hazards each KT-C enables [F/A-13 Peacemaker FMA-C Report §5.3 (worked_example)] and the system-wide foundational controls, which are described procedurally rather than by control ID [F/A-13 Peacemaker FMA-C Report §5.5 (worked_example)].",
+   "cited": [
+    "[F/A-13 Peacemaker FMA-C Report §5.3 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report Executive Summary (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.5 (worked_example)]"
+   ],
+   "retrieved": [
+    "[NIST SP 800-53 r5, pp. 247-249 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 43-45 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 118-119 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 131-132 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 22-24 (doctrine)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.1 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report §6.1 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.3 (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report Executive Summary (worked_example)]",
+    "[F/A-13 Peacemaker FMA-C Report §5.5 (worked_example)]"
+   ]
+  },
+  {
+   "id": 17,
+   "type": "negative",
+   "question": "What does NIST SP 800-171 require for CUI handling?",
+   "expected_sources": [],
+   "must_contain": [
+    "Not found in corpus"
+   ],
+   "should_refuse": true,
+   "notes": "Near-miss document name; 800-171 is not ingested.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": true,
+   "refused": true,
+   "partial": false,
+   "answer": "Not found in corpus. The corpus covers a nearby topic: it requires policy and procedures to protect CUI processed, stored, or transmitted on external systems, and it lists SP 800-171 only as a reference for that requirement. [NIST SP 800-53 r5, pp. 238-239 (doctrine)]",
+   "cited": [
+    "[NIST SP 800-53 r5, pp. 238-239 (doctrine)]"
+   ],
+   "retrieved": [
+    "[NIST SP 800-53 r5, pp. 299-301 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 278-280 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 415-416 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 277-279 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 81-82 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 121-123 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 260-262 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 238-239 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 244-246 (doctrine)]",
+    "[NIST SP 800-37 r2, pp. 58-59 (doctrine)]"
+   ]
+  },
+  {
+   "id": 18,
+   "type": "negative",
+   "question": "What does NIST SP 800-53 control SC-99 require?",
+   "expected_sources": [],
+   "must_contain": [
+    "Not found in corpus"
+   ],
+   "should_refuse": true,
+   "notes": "Real family, nonexistent control. Direct test of rule 3.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": true,
+   "refused": true,
+   "partial": false,
+   "answer": "Not found in corpus. The passages cover other 800-53 controls (e.g., AC-1, CM-3, CM-6, CM-7, IA-10 through IA-12), but SC-99 does not appear in them.",
+   "cited": [],
+   "retrieved": [
+    "[NIST SP 800-53 r5, pp. 43-45 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 240-242 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 314-316 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 126-127 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 131-132 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 35-37 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 279-281 (doctrine)]",
+    "[NIST SP 800-82 r3, pp. 260-262 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 172-174 (doctrine)]",
+    "[NIST SP 800-53 r5, pp. 453-455 (doctrine)]"
+   ]
+  },
+  {
+   "id": 19,
+   "type": "negative",
+   "question": "What does ATT&CK technique T0836 (Modify Parameter) describe?",
+   "expected_sources": [],
+   "must_contain": [
+    "Not found in corpus"
+   ],
+   "should_refuse": true,
+   "notes": "Real ICS-matrix technique; only Enterprise is ingested.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": true,
+   "refused": true,
+   "partial": false,
+   "answer": "Not found in corpus. The passages cover other ATT&CK techniques that involve modification, such as T1565 Data Manipulation, T1601 Modify System Image, and T1578 Modify Cloud Compute Infrastructure, but none cover T0836 (Modify Parameter).",
+   "cited": [],
+   "retrieved": [
+    "[MITRE ATT&CK T1578 Modify Cloud Compute Infrastructure (threat_data)]",
+    "[MITRE ATT&CK T1565 Data Manipulation (threat_data)]",
+    "[MITRE ATT&CK T1685.002 Disable or Modify Cloud Log (threat_data)]",
+    "[MITRE ATT&CK T1565.002 Transmitted Data Manipulation (threat_data)]",
+    "[MITRE ATT&CK T1543.004 Launch Daemon (threat_data)]",
+    "[MITRE ATT&CK T1601 Modify System Image (threat_data)]",
+    "[MITRE ATT&CK T1556.003 Pluggable Authentication Modules (threat_data)]",
+    "[MITRE ATT&CK T1041 Exfiltration Over C2 Channel (threat_data)]",
+    "[MITRE ATT&CK T1216.001 PubPrn (threat_data)]",
+    "[MITRE ATT&CK T1008 Fallback Channels (threat_data)]"
+   ]
+  },
+  {
+   "id": 20,
+   "type": "negative",
+   "question": "How does DoDI 3020.45 define the Mission Assurance Construct?",
+   "expected_sources": [],
+   "must_contain": [
+    "Not found in corpus"
+   ],
+   "should_refuse": true,
+   "notes": "Cited in the Peacemaker report's reference list but not ingested. Tests cite-vs-ingest discipline.",
+   "cited_correct": true,
+   "grounded": true,
+   "refusal_correct": true,
+   "refused": true,
+   "partial": false,
+   "answer": "Not found in corpus. The passages only cite DoDI 3020.45 as a reference, described as covering \"Mission Assurance principles and terminology\" [F/A-13 Peacemaker FMA-C Report References (worked_example)], and do not quote its definition of the Mission Assurance Construct.",
+   "cited": [
+    "[F/A-13 Peacemaker FMA-C Report References (worked_example)]"
+   ],
+   "retrieved": [
+    "[F/A-13 Peacemaker FMA-C Report References (worked_example)]",
+    "[DoDI 8510.01, pp. 21-24 (doctrine)]",
+    "[DoDI 8510.01, pp. 35-36 (doctrine)]",
+    "[DoDD 3020.40, pp. 1-3 (doctrine)]",
+    "[DoDD 3020.40, pp. 3-5 (doctrine)]",
+    "[DoDI 8510.01, pp. 6-8 (doctrine)]",
+    "[DoDI 8510.01, pp. 11-13 (doctrine)]",
+    "[DoDD 3020.40, pp. 8-9 (doctrine)]",
+    "[DoDI 8510.01, pp. 1-4 (doctrine)]",
+    "[DoDD 3020.40, pp. 19-21 (doctrine)]"
+   ]
+  }
+ ]
+}
